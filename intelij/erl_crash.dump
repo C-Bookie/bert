@@ -1,6 +1,0 @@
-=erl_crash_dump:0.3
-Sun Apr 09 13:11:55 2017
-Slogan: init terminating in do_boot (ended)
-System version: Erlang/OTP 19 [erts-8.2] [64-bit] [smp:4:4] [async-threads:10]
-Compiled: Mon Dec 12 21:08:56 2016
-Taints: erl_tracer

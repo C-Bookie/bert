@@ -3,7 +3,7 @@
 -compile(export_all).
 
 pulse(N, I) ->
-	io:fwrite("~n~p~n~p~n", [I, printSnapShot(N, [])]),
+	io:fwrite("~p ~s~n", [I, printSnapShot(N, [])]),
     timer:sleep(1000),
 	pulse(N, I+1).
 
@@ -19,5 +19,5 @@ printSnapShot([N|Ns], R) ->
 
 blip(0) ->
 	"_";
-blip(1) ->
-	"|".
+blip(X) ->
+  integer_to_list(X).

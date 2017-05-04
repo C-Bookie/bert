@@ -3,9 +3,10 @@
 -compile(export_all).
 
 makeNurons(File) ->
-	N=nuron:spawn_nurons(397, []),
+	{ok, Device} = file:open(File, [read]),
+	NCount=list_to_integer(cut_end(io:get_line(Device, ""))),
+	N=nuron:spawn_nurons(NCount, []),
 	io:fwrite("nurons:~n~p~n", [N]),
-   {ok, Device} = file:open(File, [read]),
     try util:get_all_lines(Device, 1, N, [], 0)
       after file:close(Device)
     end,
@@ -18,12 +19,12 @@ get_all_lines(File1, So, N, R, I) ->
 		Line ->
 			case m_process(So, cut_end(Line)) of
 				{0} ->
-					get(N, I)!R,
+					get(N, I)!{s, R},
 					get_all_lines(File1, 1, N, [], I+1);
 				{1, Str} ->
 					get_all_lines(File1, 2, N, R, Str);
 				{2, A, B} ->
-					get_all_lines(File1, 2, N, R++[{getFromList(N, A), B}], I);
+					get_all_lines(File1, 2, N, R++[{get(N, A), B}], I);
 				{3} ->
 					ok
 			end
@@ -44,10 +45,10 @@ get_a([$=|Xs], R) ->
 get_a([X|Xs], R) ->
 	get_a(Xs, R++[X]).
 
-getFromList([X|_], 0) ->
-	X;
-getFromList([_|Xs], I) ->
-	getFromList(Xs, I-1).
+%getFromList([X|_], 0) ->
+%	X;
+%getFromList([_|Xs], I) ->
+%	getFromList(Xs, I-1).
 
 cut_end(Xs) ->
 	A=flip(Xs, []),
@@ -60,3 +61,8 @@ flip([], Rs) ->
 	Rs;
 flip([X|Xs], Rs) ->
 	flip(Xs, [X]++Rs).
+
+get([X|_Xs], 0) ->
+	X;
+get([_X|Xs], I) ->
+	get(Xs, I-1).
