@@ -2,10 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="33dc5883-d4de-411c-8c89-f044e294ef6f" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/erl_crash.dump" afterPath="$PROJECT_DIR$/erl_crash.dump" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/input.erl" afterPath="$PROJECT_DIR$/src/input.erl" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/paint.erl" afterPath="$PROJECT_DIR$/src/paint.erl" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/intelij/input.beam" afterPath="$PROJECT_DIR$/out/production/intelij/input.beam" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/intelij/nuron.beam" afterPath="$PROJECT_DIR$/out/production/intelij/nuron.beam" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/intelij/paint.beam" afterPath="$PROJECT_DIR$/out/production/intelij/paint.beam" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/test/intelij/input.beam" afterPath="$PROJECT_DIR$/out/test/intelij/input.beam" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/test/intelij/nuron.beam" afterPath="$PROJECT_DIR$/out/test/intelij/nuron.beam" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/test/intelij/paint.beam" afterPath="$PROJECT_DIR$/out/test/intelij/paint.beam" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="intelij.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -93,6 +96,11 @@
     </leaf>
   </component>
   <component name="Git.Settings">
+    <option name="PREVIOUS_COMMIT_AUTHORS">
+      <list>
+        <option value="Deadly-Squtch &lt;duck-vader@hotmail.co.uk&gt;" />
+      </list>
+    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
@@ -745,16 +753,24 @@
       <workItem from="1493470488207" duration="4341000" />
       <workItem from="1493474933270" duration="919000" />
       <workItem from="1493476197486" duration="905000" />
-      <workItem from="1493952946790" duration="5733000" />
+      <workItem from="1493952946790" duration="5915000" />
     </task>
+    <task id="LOCAL-00001" summary="made a lite version to run on the pi zero">
+      <created>1493958783686</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1493958783686</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="35405000" />
+    <option name="totallyTimeSpent" value="35587000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
-    <editor active="true" />
+    <editor active="false" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -793,6 +809,10 @@
   </component>
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="made a lite version to run on the pi zero" />
+    <option name="LAST_COMMIT_MESSAGE" value="made a lite version to run on the pi zero" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
