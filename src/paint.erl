@@ -4,8 +4,7 @@
 
 pulse(N, I) ->
 %	io:fwrite("~p "++printBlock(getData(N, []), 0, []), [I]),
-
-	io:fwrite(printBlock(getData(N, []), 0, [])),
+  io:fwrite(printBlock(getData(N, []), 0, [])),
   timer:sleep(1000),
 	pulse(N, I+1).
 

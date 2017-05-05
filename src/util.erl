@@ -45,11 +45,6 @@ get_a([$=|Xs], R) ->
 get_a([X|Xs], R) ->
 	get_a(Xs, R++[X]).
 
-%getFromList([X|_], 0) ->
-%	X;
-%getFromList([_|Xs], I) ->
-%	getFromList(Xs, I-1).
-
 cut_end(Xs) ->
 	A=flip(Xs, []),
 	flip(cut_end2(A), []).

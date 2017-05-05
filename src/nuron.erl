@@ -6,14 +6,6 @@
 -define(COOLT, 10).
 -define(THRESH, 30).
 
-
-%https://gist.github.com/DimitryDushkin/5532071 {
-%-spec get_timestamp() -> integer().
-%get_timestamp() ->
-%  {Mega, Sec, Micro} = os:timestamp(),
-%  (Mega*1000000 + Sec)*1000 + round(Micro/1000).
-%}
-
 spawn_nurons(-1, R) ->
 	R;
 spawn_nurons(I, R) ->
@@ -40,17 +32,11 @@ nuron(N, C, I) ->
     nuron(N, C, 0)
 	end.
 
-gt(A) when A > 0 ->
-  A;
-gt(_A) ->
-  0.
-
 fireSynaps([]) ->
 	ok;
 fireSynaps([{N, S}|Ns]) ->
 	N!{h, S},
   fireSynaps(Ns).
-
 
 clear(N, C, I) ->
   receive
