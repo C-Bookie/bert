@@ -29,7 +29,7 @@ nuron_sb() ->
 
 %nuron(Nurons, Charge, Hot, CoolTime)
 nuron(N, C, H, _CT, T, I) when C >= ?THRESH andalso H==0->
-%  T!get_timestamp()+?FIRET,
+  T!get_timestamp()+?FIRET,
 %  fireSynaps(N),
 	nuron(N, C, 1, get_timestamp()+?COOLT, T, I+1);
 nuron(N, C, H, CT, T, I) ->
