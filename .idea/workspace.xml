@@ -2,11 +2,20 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="33dc5883-d4de-411c-8c89-f044e294ef6f" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/screen.erl" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/intelij/input.beam" afterPath="$PROJECT_DIR$/out/production/intelij/input.beam" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/intelij/main.beam" afterPath="$PROJECT_DIR$/out/production/intelij/main.beam" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/intelij/nuron.beam" afterPath="$PROJECT_DIR$/out/production/intelij/nuron.beam" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/intelij/paint.beam" afterPath="$PROJECT_DIR$/out/production/intelij/paint.beam" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/intelij/util.beam" afterPath="$PROJECT_DIR$/out/production/intelij/util.beam" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/test/intelij/input.beam" afterPath="$PROJECT_DIR$/out/test/intelij/input.beam" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/test/intelij/main.beam" afterPath="$PROJECT_DIR$/out/test/intelij/main.beam" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/test/intelij/nuron.beam" afterPath="$PROJECT_DIR$/out/test/intelij/nuron.beam" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/test/intelij/paint.beam" afterPath="$PROJECT_DIR$/out/test/intelij/paint.beam" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/test/intelij/util.beam" afterPath="$PROJECT_DIR$/out/test/intelij/util.beam" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/erl_crash.dump" afterPath="$PROJECT_DIR$/erl_crash.dump" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/nuron.erl" afterPath="$PROJECT_DIR$/src/nuron.erl" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/paint.erl" afterPath="$PROJECT_DIR$/src/paint.erl" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/util.erl" afterPath="$PROJECT_DIR$/src/util.erl" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main.erl" afterPath="$PROJECT_DIR$/src/main.erl" />
     </list>
     <ignored path="intelij.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -34,8 +43,18 @@
       <file leaf-file-name="main.erl" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main.erl">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="153">
-              <caret line="9" column="41" selection-start-line="9" selection-start-column="41" selection-end-line="9" selection-end-column="41" />
+            <state relative-caret-position="85">
+              <caret line="5" column="16" selection-start-line="5" selection-start-column="16" selection-end-line="5" selection-end-column="16" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="screen.erl" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/screen.erl">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="255">
+              <caret line="15" column="27" selection-start-line="15" selection-start-column="27" selection-end-line="15" selection-end-column="27" />
               <folding />
             </state>
           </provider>
@@ -61,11 +80,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="paint.erl" pinned="false" current-in-tab="true">
+      <file leaf-file-name="paint.erl" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/paint.erl">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="102">
-              <caret line="6" column="2" selection-start-line="6" selection-start-column="2" selection-end-line="6" selection-end-column="2" />
+            <state relative-caret-position="34">
+              <caret line="2" column="0" selection-start-line="2" selection-start-column="0" selection-end-line="2" selection-end-column="21" />
               <folding />
             </state>
           </provider>
@@ -93,6 +112,13 @@
       </file>
     </leaf>
   </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Erlang Module" />
+      </list>
+    </option>
+  </component>
   <component name="Git.Settings">
     <option name="PREVIOUS_COMMIT_AUTHORS">
       <list>
@@ -119,11 +145,12 @@
         <option value="$PROJECT_DIR$/src/bootstrap.erl" />
         <option value="$PROJECT_DIR$/maps/small.map" />
         <option value="$PROJECT_DIR$/maps/bert.map" />
-        <option value="$PROJECT_DIR$/src/main.erl" />
         <option value="$PROJECT_DIR$/src/input.erl" />
         <option value="$PROJECT_DIR$/src/nuron.erl" />
         <option value="$PROJECT_DIR$/src/paint.erl" />
         <option value="$PROJECT_DIR$/src/util.erl" />
+        <option value="$PROJECT_DIR$/src/main.erl" />
+        <option value="$PROJECT_DIR$/src/screen.erl" />
       </list>
     </option>
   </component>
@@ -136,8 +163,8 @@
   <component name="ProjectFrameBounds">
     <option name="x" value="-8" />
     <option name="y" value="-8" />
-    <option name="width" value="1382" />
-    <option name="height" value="744" />
+    <option name="width" value="1456" />
+    <option name="height" value="916" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="false">
     <OptionsSetting value="true" id="Add" />
@@ -164,6 +191,8 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="PackagesPane" />
+      <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -198,8 +227,6 @@
           </PATH>
         </subPane>
       </pane>
-      <pane id="PackagesPane" />
-      <pane id="Scratches" />
       <pane id="Scope" />
     </panes>
   </component>
@@ -213,7 +240,7 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
   </component>
-  <component name="RunManager" selected="Erlang Application.main.main">
+  <component name="RunManager" selected="Erlang Application.main.moo">
     <configuration default="false" name="main.main" type="ErlangApplicationRunConfiguration" factoryName="Erlang Application" temporary="true" show_console_on_std_err="false" show_console_on_std_out="false">
       <option name="debugOptions">
         <ErlangDebugOptions>
@@ -724,8 +751,8 @@
     </list>
     <recent_temporary>
       <list size="2">
-        <item index="0" class="java.lang.String" itemvalue="Erlang Application.main.main" />
-        <item index="1" class="java.lang.String" itemvalue="Erlang Application.main.moo" />
+        <item index="0" class="java.lang.String" itemvalue="Erlang Application.main.moo" />
+        <item index="1" class="java.lang.String" itemvalue="Erlang Application.main.main" />
       </list>
     </recent_temporary>
   </component>
@@ -752,6 +779,7 @@
       <workItem from="1493474933270" duration="919000" />
       <workItem from="1493476197486" duration="905000" />
       <workItem from="1493952946790" duration="6787000" />
+      <workItem from="1495909495990" duration="916000" />
     </task>
     <task id="LOCAL-00001" summary="made a lite version to run on the pi zero">
       <created>1493958783686</created>
@@ -785,10 +813,10 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="36459000" />
+    <option name="totallyTimeSpent" value="37375000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
+    <frame x="-8" y="-8" width="1456" height="916" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -798,12 +826,12 @@
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4731861" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.4725415" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32822478" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.17130308" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.17120343" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
@@ -848,14 +876,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/main.erl">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="6" column="69" selection-start-line="6" selection-start-column="69" selection-end-line="6" selection-end-column="69" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/nuron.erl">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -1200,14 +1220,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main.erl">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="9" column="41" selection-start-line="9" selection-start-column="41" selection-end-line="9" selection-end-column="41" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/util.erl">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="765">
@@ -1234,8 +1246,24 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/paint.erl">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="6" column="2" selection-start-line="6" selection-start-column="2" selection-end-line="6" selection-end-column="2" />
+        <state relative-caret-position="34">
+          <caret line="2" column="0" selection-start-line="2" selection-start-column="0" selection-end-line="2" selection-end-column="21" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main.erl">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="5" column="16" selection-start-line="5" selection-start-column="16" selection-end-line="5" selection-end-column="16" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/screen.erl">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="15" column="27" selection-start-line="15" selection-start-column="27" selection-end-line="15" selection-end-column="27" />
           <folding />
         </state>
       </provider>

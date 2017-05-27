@@ -3,7 +3,7 @@
 -compile(export_all).
 
 moo() ->
-  io:fwrite("ok").
+  screen:init().
 
 main() ->
   N=util:makeNurons("./maps/bert.map"),
