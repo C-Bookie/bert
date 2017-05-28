@@ -13,8 +13,13 @@
 -compile(export_all).
 
 init() ->
-  {ok, P} = python:start([{python_path, "/path/to/my/modules"}, {python, "python3"}]),
-  %{ok, P} = python:start(),
+  %{ok, P} = python:start([{python_path, "/path/to/my/modules"}, {python, "python3"}]),
+  {ok, P} = python:start_link(),
+  wait(),
+  python:call(P, builtins, print, [<<"Hello, World!">>]),
+  wait().
+
+wait() ->
   receive
   after 1000 ->
     ok
