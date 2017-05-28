@@ -13,4 +13,9 @@
 -compile(export_all).
 
 init() ->
-  {ok, P} = python:start().
+  {ok, P} = python:start([{python_path, "/path/to/my/modules"}, {python, "python3"}]),
+  %{ok, P} = python:start(),
+  receive
+  after 1000 ->
+    ok
+  end.
