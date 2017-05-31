@@ -13,11 +13,16 @@
 -compile(export_all).
 
 init() ->
-  %{ok, P} = python:start([{python_path, "/path/to/my/modules"}, {python, "python3"}]),
-  {ok, P} = python:start_link(),
+  {ok, P} = python:start_link([{python_path, "python/"}]),
+%  {ok, P} = python:start([{python, "python3"}]),
+%  {ok, P} = python:start_link(),
   wait(),
   python:call(P, builtins, print, [<<"Hello, World!">>]),
-  wait().
+  wait(),
+  io:fwrite(python:call(P, screen, moo, [])),
+  wait(),
+  {ok, Dir}=file:get_cwd(),
+  io:fwrite(Dir).
 
 wait() ->
   receive
