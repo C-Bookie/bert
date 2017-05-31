@@ -3,7 +3,7 @@
 -compile(export_all).
 
 init() ->
-  {ok, P} = python:start_link([{python_path, "/home/pi/python/luma.examples/examples"}]),
+  {ok, P} = python:start_link([{python_path, "./src/"}]),
 %  {ok, P} = python:start([{python, "python3"}]),
 %  {ok, P} = python:start_link(),
   wait(),
