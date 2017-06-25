@@ -4,7 +4,7 @@
 %-include("util.erl").
 
 moo() ->
-  screen:init(),
+  game:moo(),
   ok.
 
 run() ->

@@ -3,6 +3,7 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/intelij.iml" filepath="$PROJECT_DIR$/intelij.iml" />
+      <module fileurl="file://$PROJECT_DIR$/java/tic tac toe/tic tac toe.iml" filepath="$PROJECT_DIR$/java/tic tac toe/tic tac toe.iml" />
     </modules>
   </component>
 </project>
