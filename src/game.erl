@@ -7,7 +7,7 @@ moo() ->
   receive
     {P, Msg} ->
       io:fwrite(Msg),
-      P!moo;
+      P!10;
     X ->
       io:fwrite(X)
   end.

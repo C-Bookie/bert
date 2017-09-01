@@ -1,44 +1,9 @@
 package com.company;
 
 
-/*
+
 import com.ericsson.otp.erlang.*;
 
-
-public class Main {
-
-    public static void main(String[] args) {
-        OtpNode node = null;
-        try {
-            node = new OtpNode("gurka");
-//            node.setCookie("moo");    //no idea what it dose
-            OtpMbox mbox = node.createMbox("ttt");
-            if (mbox.ping("bert", 1000)) {
-
-            //    mbox.link("bert");
-
-                OtpErlangObject[] msg = new OtpErlangObject[2];
-                msg[0] = mbox.self();
-                msg[1] = new OtpErlangAtom("hello, world");
-                OtpErlangTuple tuple = new OtpErlangTuple(msg);
-
-                mbox.send("game", "bert",tuple);
-                System.out.println("yay");
-    
-                OtpErlangAtom o = (OtpErlangAtom)mbox.receive();
-                System.out.println(o.toString());
-            }
-            else
-                System.out.println("nay");
-
-        }
-        catch (Exception e) {
-            e.printStackTrace();
-        }
-    }
-}
-
-*/
 
 import java.awt.BasicStroke;
 import java.awt.Color;
@@ -65,8 +30,47 @@ public class Main extends JPanel {
 	private static final int Y_HATCH_CNT = 10;
 	private int scores;
 	
-	public Main(int scores) {
-		this.scores = scores;
+	private Random rand;
+	
+	public Main() {
+		//scores = getScore();
+		scores = 5;
+	}
+	
+	public int getScore() {
+		
+		rand = new Random();
+		
+		OtpNode node = null;
+		try {
+			node = new OtpNode("gurka");
+//            node.setCookie("moo");    //no idea what it dose
+			OtpMbox mbox = node.createMbox("ttt");
+			if (mbox.ping("bert", 1000)) {
+				
+				//    mbox.link("bert");    //apparently I use to know what this did
+				
+				OtpErlangObject[] msg = new OtpErlangObject[2];
+				msg[0] = mbox.self();
+				msg[1] = new OtpErlangAtom("hello, world");
+				OtpErlangTuple tuple = new OtpErlangTuple(msg);
+				
+				mbox.send("game", "bert",tuple);
+				System.out.println("yay");
+				
+				OtpErlangLong o = (OtpErlangLong)mbox.receive();
+				System.out.println(o.toString());
+				return o.intValue();
+			}
+			else
+				System.out.println("nay");
+			
+		}
+		catch (Exception e) {
+			e.printStackTrace();
+		}
+		
+		return -1;
 	}
 	
 
@@ -101,6 +105,7 @@ public class Main extends JPanel {
 			g2.drawLine(x0, y0, x1, y1);
 		}
 		
+		g2.draw3DRect(100, 100, rand.nextInt(100), rand.nextInt(100), false);
 		
 	}
 	
@@ -109,13 +114,24 @@ public class Main extends JPanel {
 	}
 	
 	private static void createAndShowGui() {
-		Main mainPanel = new Main(10);
+		Main mainPanel = new Main();
 		
 		JFrame frame = new JFrame("DrawGraph");
 		frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		frame.getContentPane().add(mainPanel);
 		frame.pack();
 		frame.setVisible(true);
+
+		try {
+			while (true) {
+				Thread.sleep(1000);
+				mainPanel.repaint();
+				SwingUtilities.updateComponentTreeUI(frame);
+			}
+		} catch (InterruptedException e) {
+			e.printStackTrace();
+		}
+
 	}
 	
 	public static void main(String[] args) {

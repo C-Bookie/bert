@@ -2,12 +2,12 @@
 -module(paint).
 -compile(export_all).
 
-pulse(N, I, J) ->
-%	io:fwrite("~p "++printBlock(getData(N, []), 0, []), [I]),
-%  io:fwrite(printBlock(getData(N, []), 0, [])),
-  J!getData(N, []),
+pulse(N, I) ->
+	io:fwrite("~p "++printBlock(getData(N, []), 0, []), [I]),
+  io:fwrite(printBlock(getData(N, []), 0, [])),
+%  J!getData(N, []),
   timer:sleep(1000),
-	pulse(N, I+1, J).
+	pulse(N, I+1).
 
 getData([], R) ->
   R;
