@@ -1,13 +1,25 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="BookmarkManager">
+    <bookmark url="file://$PROJECT_DIR$/java/tic tac toe/src/com/company/Main.java" line="206" mnemonic="9" />
+  </component>
   <component name="ChangeListManager">
-    <list default="true" id="33dc5883-d4de-411c-8c89-f044e294ef6f" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/intelij/paint.beam" afterPath="$PROJECT_DIR$/out/production/intelij/paint.beam" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/test/intelij/paint.beam" afterPath="$PROJECT_DIR$/out/test/intelij/paint.beam" />
+    <list default="true" id="33dc5883-d4de-411c-8c89-f044e294ef6f" name="Default" comment="cleaned some tic tak toe code">
+      <change type="DELETED" beforePath="$PROJECT_DIR$/intelij.iml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/python/.idea/inspectionProfiles/profiles_settings.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/python/.idea/misc.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/python/.idea/modules.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/python/.idea/python.iml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/python/.idea/workspace.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/python/screen.py" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/OtpErlang.xml" afterPath="$PROJECT_DIR$/.idea/libraries/OtpErlang.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/modules.xml" afterPath="$PROJECT_DIR$/.idea/modules.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/erl_crash.dump" afterPath="$PROJECT_DIR$/erl_crash.dump" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/java/tic tac toe/src/com/company/Main.java" afterPath="$PROJECT_DIR$/java/tic tac toe/src/com/company/Main.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/game.erl" afterPath="$PROJECT_DIR$/src/game.erl" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main.erl" afterPath="$PROJECT_DIR$/src/main.erl" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/paint.erl" afterPath="$PROJECT_DIR$/src/paint.erl" />
     </list>
     <ignored path="intelij.iws" />
@@ -36,8 +48,8 @@
       <file leaf-file-name="main.erl" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main.erl">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="153">
-              <caret line="9" column="8" selection-start-line="9" selection-start-column="8" selection-end-line="9" selection-end-column="8" />
+            <state relative-caret-position="255">
+              <caret line="15" column="47" selection-start-line="15" selection-start-column="47" selection-end-line="15" selection-end-column="47" />
               <folding />
             </state>
           </provider>
@@ -56,8 +68,8 @@
       <file leaf-file-name="paint.erl" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/paint.erl">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="102">
-              <caret line="6" column="0" selection-start-line="6" selection-start-column="0" selection-end-line="6" selection-end-column="0" />
+            <state relative-caret-position="170">
+              <caret line="10" column="17" selection-start-line="10" selection-start-column="17" selection-end-line="10" selection-end-column="17" />
               <folding />
             </state>
           </provider>
@@ -86,8 +98,8 @@
       <file leaf-file-name="bert.map" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/maps/bert.map">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="255">
-              <caret line="15" column="5" selection-start-line="15" selection-start-column="5" selection-end-line="15" selection-end-column="5" />
+            <state relative-caret-position="561">
+              <caret line="33" column="5" selection-start-line="33" selection-start-column="5" selection-end-line="33" selection-end-column="5" />
               <folding />
             </state>
           </provider>
@@ -96,8 +108,8 @@
       <file leaf-file-name="game.erl" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/game.erl">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="153">
-              <caret line="9" column="10" selection-start-line="9" selection-start-column="10" selection-end-line="9" selection-end-column="10" />
+            <state relative-caret-position="306">
+              <caret line="18" column="33" selection-start-line="18" selection-start-column="33" selection-end-line="18" selection-end-column="33" />
               <folding />
             </state>
           </provider>
@@ -106,9 +118,11 @@
       <file leaf-file-name="Main.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/java/tic tac toe/src/com/company/Main.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="17">
-              <caret line="77" column="0" selection-start-line="77" selection-start-column="0" selection-end-line="77" selection-end-column="0" />
-              <folding />
+            <state relative-caret-position="359">
+              <caret line="95" column="20" selection-start-line="95" selection-start-column="20" selection-end-line="95" selection-end-column="20" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -193,7 +207,7 @@
     <ConfirmationsSetting value="0" id="Remove" />
   </component>
   <component name="ProjectView">
-    <navigator proportions="" version="1">
+    <navigator currentView="ProjectPane" proportions="" version="1">
       <flattenPackages />
       <showMembers />
       <showModules />
@@ -206,17 +220,33 @@
       <manualOrder />
       <foldersAlwaysOnTop value="true" />
     </navigator>
-    <panes />
+    <panes>
+      <pane id="Scope">
+        <subPane subId="Project Files">
+          <PATH>
+            <PATH_ELEMENT USER_OBJECT="Root">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+          </PATH>
+        </subPane>
+      </pane>
+      <pane id="Scratches" />
+      <pane id="ProjectPane">
+        <subPane />
+      </pane>
+      <pane id="PackagesPane" />
+    </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="settings.editor.selected.configurable" value="configurable.group.tools" />
+    <property name="settings.editor.selected.configurable" value="preferences.keymap" />
     <property name="settings.editor.splitter.proportion" value="0.2" />
-    <property name="project.structure.last.edited" value="Modules" />
+    <property name="project.structure.last.edited" value="Project" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/java/tic tac toe/lib/OtpErlang.jar!/" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/java/tic tac toe/lib/lwjgl-3.1.2/lwjgl-yoga" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
@@ -238,10 +268,10 @@
       <option name="params" value="" />
       <option name="useTestCodePath" value="false" />
       <option name="workDirectory" value="" />
-      <module name="intelij" />
+      <module name="erlang" />
       <method />
     </configuration>
-    <configuration default="false" name="main.moo" type="ErlangApplicationRunConfiguration" factoryName="Erlang Application" temporary="true" show_console_on_std_err="false" show_console_on_std_out="false">
+    <configuration default="false" name="game.moo" type="ErlangApplicationRunConfiguration" factoryName="Erlang Application" temporary="true" show_console_on_std_err="false" show_console_on_std_out="false">
       <option name="debugOptions">
         <ErlangDebugOptions>
           <option name="autoUpdateModulesNotToInterpret" value="true" />
@@ -250,12 +280,29 @@
           </option>
         </ErlangDebugOptions>
       </option>
-      <option name="erlFlags" value="-sname bert" />
-      <option name="moduleAndFunction" value="main moo" />
+      <option name="erlFlags" value="-sname moo1" />
+      <option name="moduleAndFunction" value="game moo" />
       <option name="params" value="" />
       <option name="useTestCodePath" value="false" />
       <option name="workDirectory" value="" />
-      <module name="intelij" />
+      <module name="erlang" />
+      <method />
+    </configuration>
+    <configuration default="false" name="game.moo2" type="ErlangApplicationRunConfiguration" factoryName="Erlang Application" temporary="true" show_console_on_std_err="false" show_console_on_std_out="false">
+      <option name="debugOptions">
+        <ErlangDebugOptions>
+          <option name="autoUpdateModulesNotToInterpret" value="true" />
+          <option name="modulesNotToInterpret">
+            <set />
+          </option>
+        </ErlangDebugOptions>
+      </option>
+      <option name="erlFlags" value="-sname moo2" />
+      <option name="moduleAndFunction" value="game moo2" />
+      <option name="params" value="" />
+      <option name="useTestCodePath" value="false" />
+      <option name="workDirectory" value="" />
+      <module name="erlang" />
       <method />
     </configuration>
     <configuration default="true" type="#org.jetbrains.idea.devkit.run.PluginConfigurationType" factoryName="Plugin">
@@ -737,21 +784,23 @@
       <method />
     </configuration>
     <configuration default="false" name="terminal" type="ErlangConsoleRunConfigurationType" factoryName="Erlang Console" show_console_on_std_err="false" show_console_on_std_out="false">
-      <option name="consoleArgs" value="" />
+      <option name="consoleArgs" value="-sname server_02" />
       <option name="workingDirPath" value="$PROJECT_DIR$" />
       <module />
       <method />
     </configuration>
-    <list size="4">
+    <list size="5">
       <item index="0" class="java.lang.String" itemvalue="Application.tic tac toe" />
       <item index="1" class="java.lang.String" itemvalue="Erlang Console.terminal" />
       <item index="2" class="java.lang.String" itemvalue="Erlang Application.main.run" />
-      <item index="3" class="java.lang.String" itemvalue="Erlang Application.main.moo" />
+      <item index="3" class="java.lang.String" itemvalue="Erlang Application.game.moo" />
+      <item index="4" class="java.lang.String" itemvalue="Erlang Application.game.moo2" />
     </list>
     <recent_temporary>
-      <list size="2">
-        <item index="0" class="java.lang.String" itemvalue="Erlang Application.main.moo" />
-        <item index="1" class="java.lang.String" itemvalue="Erlang Application.main.run" />
+      <list size="3">
+        <item index="0" class="java.lang.String" itemvalue="Erlang Application.game.moo" />
+        <item index="1" class="java.lang.String" itemvalue="Erlang Application.game.moo2" />
+        <item index="2" class="java.lang.String" itemvalue="Erlang Application.main.run" />
       </list>
     </recent_temporary>
   </component>
@@ -797,7 +846,19 @@
       <workItem from="1501105366733" duration="1799000" />
       <workItem from="1501453011067" duration="2271000" />
       <workItem from="1504284933946" duration="2434000" />
-      <workItem from="1504296581452" duration="115000" />
+      <workItem from="1504296581452" duration="2083000" />
+      <workItem from="1504300922229" duration="1125000" />
+      <workItem from="1504304561634" duration="999000" />
+      <workItem from="1504444179017" duration="191000" />
+      <workItem from="1504556146516" duration="3047000" />
+      <workItem from="1504644564286" duration="5979000" />
+      <workItem from="1504969477043" duration="1364000" />
+      <workItem from="1505047318032" duration="9563000" />
+      <workItem from="1505066454523" duration="3511000" />
+      <workItem from="1505159501307" duration="772000" />
+      <workItem from="1505311014759" duration="10159000" />
+      <workItem from="1505395568150" duration="7542000" />
+      <workItem from="1505470357168" duration="3445000" />
     </task>
     <task id="LOCAL-00001" summary="made a lite version to run on the pi zero">
       <created>1493958783686</created>
@@ -876,28 +937,36 @@
       <option name="project" value="LOCAL" />
       <updated>1498473845300</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="cleaned some tic tak toe code">
+      <created>1504296747215</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1504296747215</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="74650000" />
+    <option name="totallyTimeSpent" value="124315000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
-    <editor active="true" />
+    <editor active="false" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32492113" sideWeight="0.49707174" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32492113" sideWeight="0.50292826" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.34858045" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3280757" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.40536278" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32822478" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3418741" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.27452415" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
@@ -908,10 +977,12 @@
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="combo" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32492113" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
+  </component>
+  <component name="UnknownFeatures">
+    <option featureType="com.intellij.fileTypeFactory" implementationName="*.map" />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
     <option name="TAB_STATES">
@@ -949,7 +1020,8 @@
     <MESSAGE value="." />
     <MESSAGE value="ditched python implementation due to lack of documentation for erlport&#10;now using jinterface to connect bert to java applications&#10;begun development of tic tac toe" />
     <MESSAGE value="adding gui" />
-    <option name="LAST_COMMIT_MESSAGE" value="adding gui" />
+    <MESSAGE value="cleaned some tic tak toe code" />
+    <option name="LAST_COMMIT_MESSAGE" value="cleaned some tic tak toe code" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -959,22 +1031,11 @@
           <line>5</line>
           <option name="timeStamp" value="31" />
         </line-breakpoint>
-        <line-breakpoint enabled="true" type="ErlangLineBreakpoint">
-          <url>file://$PROJECT_DIR$/src/main.erl</url>
-          <line>10</line>
-          <option name="timeStamp" value="32" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/java/tic tac toe/src/com/company/Main.java</url>
-          <line>78</line>
-          <properties />
-          <option name="timeStamp" value="36" />
-        </line-breakpoint>
       </breakpoints>
       <breakpoints-dialog>
         <breakpoints-dialog />
       </breakpoints-dialog>
-      <option name="time" value="37" />
+      <option name="time" value="42" />
     </breakpoint-manager>
     <watches-manager />
   </component>
@@ -1285,13 +1346,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/erl_crash.dump">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-310483">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/TicTakToe.java" />
     <entry file="file://$PROJECT_DIR$/README.md">
       <provider selected="true" editor-type-id="text-editor">
@@ -1300,18 +1354,33 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/screen.erl">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="4" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/erl_crash.dump">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-20111">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/util.erl">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="204">
+          <caret line="12" column="0" selection-start-line="12" selection-start-column="0" selection-end-line="12" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/input.erl">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="153">
           <caret line="9" column="0" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/screen.erl">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="4" selection-end-column="21" />
         </state>
       </provider>
     </entry>
@@ -1325,49 +1394,43 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/paint.erl">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="6" column="0" selection-start-line="6" selection-start-column="0" selection-end-line="6" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/util.erl">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="12" column="0" selection-start-line="12" selection-start-column="0" selection-end-line="12" selection-end-column="0" />
+        <state relative-caret-position="170">
+          <caret line="10" column="17" selection-start-line="10" selection-start-column="17" selection-end-line="10" selection-end-column="17" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/maps/bert.map">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="15" column="5" selection-start-line="15" selection-start-column="5" selection-end-line="15" selection-end-column="5" />
+        <state relative-caret-position="561">
+          <caret line="33" column="5" selection-start-line="33" selection-start-column="5" selection-end-line="33" selection-end-column="5" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main.erl">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="9" column="8" selection-start-line="9" selection-start-column="8" selection-end-line="9" selection-end-column="8" />
+        <state relative-caret-position="255">
+          <caret line="15" column="47" selection-start-line="15" selection-start-column="47" selection-end-line="15" selection-end-column="47" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/game.erl">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="9" column="10" selection-start-line="9" selection-start-column="10" selection-end-line="9" selection-end-column="10" />
+        <state relative-caret-position="306">
+          <caret line="18" column="33" selection-start-line="18" selection-start-column="33" selection-end-line="18" selection-end-column="33" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/java/tic tac toe/src/com/company/Main.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17">
-          <caret line="77" column="0" selection-start-line="77" selection-start-column="0" selection-end-line="77" selection-end-column="0" />
-          <folding />
+        <state relative-caret-position="359">
+          <caret line="95" column="20" selection-start-line="95" selection-start-column="20" selection-end-line="95" selection-end-column="20" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -1399,7 +1462,7 @@
       </state>
       <state key="FacetStructureConfigurable.UI">
         <settings>
-          <last-edited>Erlang</last-edited>
+          <last-edited>Erlang (erlang)|Erlang</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>
@@ -1422,7 +1485,7 @@
       </state>
       <state key="JdkListConfigurable.UI">
         <settings>
-          <last-edited>Erlang 19</last-edited>
+          <last-edited>1.8</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>
@@ -1434,7 +1497,7 @@
       </state>
       <state key="ModuleStructureConfigurable.UI">
         <settings>
-          <last-edited>intelij</last-edited>
+          <last-edited>tic tac toe</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>

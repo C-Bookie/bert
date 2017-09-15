@@ -1,67 +1,67 @@
 package com.company;
 
 
+import org.lwjgl.*;
+import org.lwjgl.glfw.*;
+import org.lwjgl.opengl.*;
+import org.lwjgl.system.*;
+
+import java.awt.*;
+import java.io.IOException;
+import java.nio.*;
+
+import static org.lwjgl.glfw.Callbacks.*;
+import static org.lwjgl.glfw.GLFW.*;
+import static org.lwjgl.opengl.GL11.*;
+import static org.lwjgl.system.MemoryStack.*;
+import static org.lwjgl.system.MemoryUtil.*;
 
 import com.ericsson.otp.erlang.*;
 
-
-import java.awt.BasicStroke;
-import java.awt.Color;
-import java.awt.Dimension;
-import java.awt.Graphics;
-import java.awt.Graphics2D;
-import java.awt.Point;
-import java.awt.RenderingHints;
-import java.awt.Stroke;
-import java.util.ArrayList;
-import java.util.List;
-import java.util.Random;
-import javax.swing.*;
-
-public class Main extends JPanel {
-	private static final int MAX_SCORE = 20;
-	private static final int PREF_W = 800;
-	private static final int PREF_H = 650;
-	private static final int BORDER_GAP = 30;
-	private static final Color GRAPH_COLOR = Color.green;
-	private static final Color GRAPH_POINT_COLOR = new Color(150, 50, 50, 180);
-	private static final Stroke GRAPH_STROKE = new BasicStroke(3f);
-	private static final int GRAPH_POINT_WIDTH = 12;
-	private static final int Y_HATCH_CNT = 10;
-	private int scores;
+public class Main {
 	
-	private Random rand;
+	private static final String NAME = "graph";
+	private static final String SERVER = "moo1@computer-48";
+	private static String CLIENT = "bert";
+//	private static final String COOKIE = "moo";
+	private static final String MAIL_BOX = "graphMail";
+	
+	private final boolean LINK = false;
+	
+	private long window;
+	private OtpNode self;
+//	private OtpSelf self;
+	private OtpMbox mbox;
+//	private OtpPeer client;
+	private OtpErlangPid client;
+	
+	private static final int GRAPH_SIZE = 256;
+	private int[] graph;
+	private int step = 0;
 	
 	public Main() {
-		//scores = getScore();
-		scores = 5;
-	}
-	
-	public int getScore() {
-		
-		rand = new Random();
-		
-		OtpNode node = null;
+		graph = new int[GRAPH_SIZE];
 		try {
-			node = new OtpNode("gurka");
-//            node.setCookie("moo");    //no idea what it dose
-			OtpMbox mbox = node.createMbox("ttt");
-			if (mbox.ping("bert", 1000)) {
-				
-				//    mbox.link("bert");    //apparently I use to know what this did
-				
-				OtpErlangObject[] msg = new OtpErlangObject[2];
-				msg[0] = mbox.self();
-				msg[1] = new OtpErlangAtom("hello, world");
-				OtpErlangTuple tuple = new OtpErlangTuple(msg);
-				
-				mbox.send("game", "bert",tuple);
-				System.out.println("yay");
-				
-				OtpErlangLong o = (OtpErlangLong)mbox.receive();
-				System.out.println(o.toString());
-				return o.intValue();
-			}
+
+//			self = new OtpSelf(NAME);    //if no connection to the name server, run 'erl -sname <anything>' in a terminal
+//			System.out.println("Registered: " + NAME);
+			
+//			while (!self.publishPort())
+			
+			self = new OtpNode(NAME);
+			System.out.println("Registered: " + NAME);
+			
+//          node.setCookie(COOKIE);    //for security, not needed
+//			System.out.println("Cookie: " + COOKIE);
+			
+			mbox = self.createMbox(MAIL_BOX);
+			System.out.println("Mail_box: " + MAIL_BOX);
+
+//			client = new OtpPeer(CLIENT);
+//			System.out.println("Connected: " + CLIENT);
+			
+			if (self.ping(CLIENT, 1000))
+				System.out.println(client.node());
 			else
 				System.out.println("nay");
 			
@@ -69,77 +69,176 @@ public class Main extends JPanel {
 		catch (Exception e) {
 			e.printStackTrace();
 		}
-		
-		return -1;
+		System.out.println("Constructed:" + NAME);
 	}
 	
-
-	protected void paintComponent(Graphics g) {
-		super.paintComponent(g);
-		Graphics2D g2 = (Graphics2D)g;
-		g2.setRenderingHint(RenderingHints.KEY_ANTIALIASING, RenderingHints.VALUE_ANTIALIAS_ON);
-		
-		double xScale = ((double) getWidth() - 2 * BORDER_GAP) / (scores - 1);
-		double yScale = ((double) getHeight() - 2 * BORDER_GAP) / (MAX_SCORE - 1);
-		
-		
-		// create x and y axes
-		g2.drawLine(BORDER_GAP, getHeight() - BORDER_GAP, BORDER_GAP, BORDER_GAP);
-		g2.drawLine(BORDER_GAP, getHeight() - BORDER_GAP, getWidth() - BORDER_GAP, getHeight() - BORDER_GAP);
-		
-		// create hatch marks for y axis.
-		for (int i = 0; i < Y_HATCH_CNT; i++) {
-			int x0 = BORDER_GAP;
-			int x1 = GRAPH_POINT_WIDTH + BORDER_GAP;
-			int y0 = getHeight() - (((i + 1) * (getHeight() - BORDER_GAP * 2)) / Y_HATCH_CNT + BORDER_GAP);
-			int y1 = y0;
-			g2.drawLine(x0, y0, x1, y1);
-		}
-		
-		// and for x axis
-		for (int i = 0; i < scores - 1; i++) {
-			int x0 = (i + 1) * (getWidth() - BORDER_GAP * 2) / (scores - 1) + BORDER_GAP;
-			int x1 = x0;
-			int y0 = getHeight() - BORDER_GAP;
-			int y1 = y0 - GRAPH_POINT_WIDTH;
-			g2.drawLine(x0, y0, x1, y1);
-		}
-		
-		g2.draw3DRect(100, 100, rand.nextInt(100), rand.nextInt(100), false);
-		
-	}
-	
-	public Dimension getPreferredSize() {
-		return new Dimension(PREF_W, PREF_H);
-	}
-	
-	private static void createAndShowGui() {
-		Main mainPanel = new Main();
-		
-		JFrame frame = new JFrame("DrawGraph");
-		frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-		frame.getContentPane().add(mainPanel);
-		frame.pack();
-		frame.setVisible(true);
-
+	public int coms() {
 		try {
-			while (true) {
-				Thread.sleep(1000);
-				mainPanel.repaint();
-				SwingUtilities.updateComponentTreeUI(frame);
+			if (self.ping(SERVER, 1000)) {
+//				if (self.ping(CLIENT, 1000)) {
+					
+					if (LINK)
+						mbox.link(self.createPid());
+					
+					OtpErlangObject[] msg = new OtpErlangObject[2];
+					msg[0] = new OtpErlangAtom("get");
+					msg[1] = mbox.self();
+					OtpErlangTuple tuple = new OtpErlangTuple(msg);
+					
+					mbox.send(CLIENT, SERVER, tuple);
+					System.out.println("yay");
+
+//				OtpErlangTuple o = (OtpErlangTuple)mbox.receive();
+					OtpErlangLong o = (OtpErlangLong) mbox.receive();
+					System.out.println(Integer.toString(step) + ": " + o.toString());
+					return 1;
+//				}
+//				else
+//					System.out.println(Integer.toString(step) + ": no connection to bert");
 			}
-		} catch (InterruptedException e) {
+			else
+				System.out.println(Integer.toString(step) + ": no connection to server");
+			
+		}
+		catch (Exception e) {
 			e.printStackTrace();
 		}
-
+		
+		return 0;
 	}
 	
-	public static void main(String[] args) {
-		SwingUtilities.invokeLater(new Runnable() {
-			public void run() {
-				createAndShowGui();
-			}
+
+	private void init() {
+		GLFWErrorCallback.createPrint(System.err).set();
+
+		if ( !glfwInit() )
+			throw new IllegalStateException("Unable to initialize GLFW");
+		
+		glfwDefaultWindowHints();
+		glfwWindowHint(GLFW_VISIBLE, GLFW_FALSE);
+		glfwWindowHint(GLFW_RESIZABLE, GLFW_TRUE);
+		
+		window = glfwCreateWindow(300, 300, "Hello World!", NULL, NULL);
+		if ( window == NULL )
+			throw new RuntimeException("Failed to create the GLFW window");
+		
+		glfwSetKeyCallback(window, (window, key, scancode, action, mods) -> {
+			if ( key == GLFW_KEY_ESCAPE && action == GLFW_RELEASE )
+				glfwSetWindowShouldClose(window, true); // We will detect this in the rendering loop
 		});
+		
+		// Get the thread stack and push a new frame
+		try ( MemoryStack stack = stackPush() ) {
+			IntBuffer pWidth = stack.mallocInt(1); // int*
+			IntBuffer pHeight = stack.mallocInt(1); // int*
+			
+			// Get the window size passed to glfwCreateWindow
+			glfwGetWindowSize(window, pWidth, pHeight);
+			
+			// Get the resolution of the primary monitor
+			GLFWVidMode vidmode = glfwGetVideoMode(glfwGetPrimaryMonitor());
+			
+			// Center the window
+			glfwSetWindowPos(
+					window,
+					(vidmode.width() - pWidth.get(0)) / 2,
+					(vidmode.height() - pHeight.get(0)) / 2
+			);
+		} // the stack frame is popped automatically
+		
+		// Make the OpenGL context current
+		glfwMakeContextCurrent(window);
+		// Enable v-sync
+		glfwSwapInterval(1);
+		
+		// Make the window visible
+		glfwShowWindow(window);
+		
 	}
+	
+	private void loop() {
+		// This line is critical for LWJGL's interoperation with GLFW's
+		// OpenGL context, or any context that is managed externally.
+		// LWJGL detects the context that is current in the current thread,
+		// creates the GLCapabilities instance and makes the OpenGL
+		// bindings available for use.
+		GL.createCapabilities();
+		
+		// Set the clear color
+		glClearColor(1.0f, 0.0f, 0.0f, 0.0f);
+		
+		// Run the rendering loop until the user has attempted to close
+		// the window or has pressed the ESCAPE key.
+		while ( !glfwWindowShouldClose(window) ) {
+			glClear(GL_COLOR_BUFFER_BIT | GL_DEPTH_BUFFER_BIT); // clear the framebuffer
+			
+			test();
+			
+			glfwSwapBuffers(window); // swap the color buffers
+			
+			// Poll for window events. The key callback above will only be
+			// invoked during this call.
+			glfwPollEvents();
+		}
+	}
+	
+	private void test() {
+		graph[step] = coms();
+		
+		GL11.glColor3f(0.0f, 1.0f, 0.2f);
+		
+		final float xMin = 0.1f;
+		final float xMax = 0.9f;
+		final float yMin = 0.1f;
+		final float yMax = 0.9f;
+		
+		for(int i=0; i<GRAPH_SIZE-1; i++)
+			drawLine(
+					map(xMin, xMax, (float)i/GRAPH_SIZE),
+					map(yMin, yMax, graph[i]),
+					map(xMin, xMax, (float)(i+1)/GRAPH_SIZE),
+					map(yMin, yMax, graph[i+1])
+			);
+		
+		step = (step+1)%GRAPH_SIZE;
+	}
+	
+	public float map(float low, float high, float value) {
+		return low + ((high-low)*value);
+	}
+	
+	public void drawLine(float x1, float y1, float x2, float y2) {
+		GL11.glBegin(GL11.GL_LINE_STRIP);
+		
+		GL11.glVertex2d(x1, y1);
+		GL11.glVertex2d(x2, y2);
+		GL11.glEnd();
+		
+	}
+	
+	public void run() {
+		System.out.println("Hello LWJGL " + Version.getVersion() + "!");
+		
+		init();
+		loop();
+		
+		// Free the window callbacks and destroy the window
+		glfwFreeCallbacks(window);
+		glfwDestroyWindow(window);
+		
+		// Terminate GLFW and free the error callback
+		glfwTerminate();
+		glfwSetErrorCallback(null).free();
+	}
+	
+	
+	
+	public static void main(String[] args) {
+		Main main = new Main();
+//		System.out.println(main.self.createPid().toString());
+ 		main.run();
+	}
+	
 }
+
 

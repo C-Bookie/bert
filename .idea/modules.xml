@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/intelij.iml" filepath="$PROJECT_DIR$/intelij.iml" />
+      <module fileurl="file://$PROJECT_DIR$/erlang.iml" filepath="$PROJECT_DIR$/erlang.iml" />
       <module fileurl="file://$PROJECT_DIR$/java/tic tac toe/tic tac toe.iml" filepath="$PROJECT_DIR$/java/tic tac toe/tic tac toe.iml" />
     </modules>
   </component>
