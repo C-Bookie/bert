@@ -10,6 +10,7 @@ import java.awt.*;
 import java.io.IOException;
 import java.nio.*;
 
+import static java.lang.Thread.sleep;
 import static org.lwjgl.glfw.Callbacks.*;
 import static org.lwjgl.glfw.GLFW.*;
 import static org.lwjgl.opengl.GL11.*;
@@ -86,12 +87,12 @@ public class Main {
 					OtpErlangTuple tuple = new OtpErlangTuple(msg);
 					
 					mbox.send(CLIENT, SERVER, tuple);
-					System.out.println("yay");
-
-//				OtpErlangTuple o = (OtpErlangTuple)mbox.receive();
-					OtpErlangLong o = (OtpErlangLong) mbox.receive();
-					System.out.println(Integer.toString(step) + ": " + o.toString());
-					return 1;
+//					System.out.println("yay");
+				
+				OtpErlangTuple o = (OtpErlangTuple) mbox.receive();
+				OtpErlangList o2 = (OtpErlangList)o.elementAt(1);
+					System.out.println(Integer.toString(step) + ": " + o2.toString());
+					return getSum(o2);
 //				}
 //				else
 //					System.out.println(Integer.toString(step) + ": no connection to bert");
@@ -107,6 +108,18 @@ public class Main {
 		return 0;
 	}
 	
+	public int getSum(OtpErlangList L) {
+		int r = 0;
+		try {
+			for (int i = L.arity()-1; i>=0;i--) {
+//				System.out.println(((OtpErlangLong)L.elementAt(i)).intValue());
+				r += ((OtpErlangLong)L.elementAt(i)).intValue();
+			}
+		} catch (OtpErlangRangeException e) {
+			e.printStackTrace();
+		}
+		return r;
+	}
 
 	private void init() {
 		GLFWErrorCallback.createPrint(System.err).set();
@@ -174,6 +187,12 @@ public class Main {
 			
 			test();
 			
+/*			try {
+				sleep(400);
+			} catch (InterruptedException e) {
+				e.printStackTrace();
+			}
+*/
 			glfwSwapBuffers(window); // swap the color buffers
 			
 			// Poll for window events. The key callback above will only be
@@ -183,21 +202,24 @@ public class Main {
 	}
 	
 	private void test() {
+		
+		int a = coms();
+		System.out.println(a);
 		graph[step] = coms();
 		
 		GL11.glColor3f(0.0f, 1.0f, 0.2f);
 		
-		final float xMin = 0.1f;
+		final float xMin = -0.9f;
 		final float xMax = 0.9f;
-		final float yMin = 0.1f;
+		final float yMin = -0.9f;
 		final float yMax = 0.9f;
 		
 		for(int i=0; i<GRAPH_SIZE-1; i++)
 			drawLine(
 					map(xMin, xMax, (float)i/GRAPH_SIZE),
-					map(yMin, yMax, graph[i]),
+					map(yMin, yMax, graph[(step+i+1)%GRAPH_SIZE]/10000.f),
 					map(xMin, xMax, (float)(i+1)/GRAPH_SIZE),
-					map(yMin, yMax, graph[i+1])
+					map(yMin, yMax, graph[(step+i+2)%GRAPH_SIZE]/10000.f)
 			);
 		
 		step = (step+1)%GRAPH_SIZE;

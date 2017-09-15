@@ -18,6 +18,8 @@ nuron_sb() ->
 	end.
 
 %nuron(Nurons, Charge, I-count)
+nuron(N, C, I) when C < 0->
+	nuron(N, 0, I);
 nuron(N, C, I) when C >= ?THRESH->
   timer:sleep(?FIRET),
   fireSynaps(N),
@@ -28,8 +30,8 @@ nuron(N, C, I) ->
 		{h, S} ->
 			nuron(N, C+S, I);
 		{get, P} ->
-			P!I,
-    nuron(N, C, 0)
+			P!C,
+	    nuron(N, C, 0)
 	end.
 
 fireSynaps([]) ->

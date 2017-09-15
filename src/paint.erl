@@ -4,7 +4,7 @@
 
 pulse(N, I) ->
 	io:fwrite("~p "++printBlock(getData(N, []), 0, []), [I]),
-  io:fwrite(printBlock(getData(N, []), 0, [])),
+%  io:format("~p~n", [getData(N, [])]),
   timer:sleep(1000),
 	pulse(N, I+1).
 
@@ -14,7 +14,7 @@ getData([N|Ns], R) ->
   N!{get, self()},
   receive
     X ->
-      getData(Ns, R++[X])
+      getData(Ns, [X|R])
   end.
 
 printLine(_, [], R, S) ->
