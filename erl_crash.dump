@@ -1,83 +1,83 @@
 =erl_crash_dump:0.3
-Fri Sep 15 13:54:56 2017
+Fri Sep 15 18:58:18 2017
 Slogan: init terminating in do_boot (ended)
 System version: Erlang/OTP 19 [erts-8.2] [64-bit] [smp:4:4] [async-threads:10]
 Compiled: Mon Dec 12 21:08:56 2016
 Taints: erl_tracer
-Atoms: 7089
-Calling Thread: scheduler:4
+Atoms: 7091
+Calling Thread: scheduler:2
 =scheduler:1
 Scheduler Sleep Info Flags: SLEEPING | TSE_SLEEPING
-Scheduler Sleep Info Aux Work: DELAYED_AW_WAKEUP | DD | DD_THR_PRGR | THR_PRGR_LATER_OP
+Scheduler Sleep Info Aux Work: DD
 Current Port: 
 Run Queue Max Length: 0
 Run Queue High Length: 0
-Run Queue Normal Length: 62
+Run Queue Normal Length: 79
 Run Queue Low Length: 0
 Run Queue Port Length: 0
-Run Queue Flags: NONEMPTY_NORMAL | OUT_OF_WORK | HALFTIME_OUT_OF_WORK | NONEMPTY | UNKNOWN(134217728)
+Run Queue Flags: NONEMPTY_NORMAL | OUT_OF_WORK | HALFTIME_OUT_OF_WORK | NONEMPTY
 Current Process: 
 =scheduler:2
-Scheduler Sleep Info Flags: SLEEPING | TSE_SLEEPING
-Scheduler Sleep Info Aux Work: DELAYED_AW_WAKEUP | DD
-Current Port: 
-Run Queue Max Length: 0
-Run Queue High Length: 0
-Run Queue Normal Length: 148
-Run Queue Low Length: 0
-Run Queue Port Length: 0
-Run Queue Flags: NONEMPTY_NORMAL | OUT_OF_WORK | HALFTIME_OUT_OF_WORK | NONEMPTY | UNKNOWN(134217728)
-Current Process: 
-=scheduler:3
-Scheduler Sleep Info Flags: SLEEPING | TSE_SLEEPING
+Scheduler Sleep Info Flags: 
 Scheduler Sleep Info Aux Work: DELAYED_AW_WAKEUP | DD_THR_PRGR | THR_PRGR_LATER_OP
 Current Port: 
 Run Queue Max Length: 0
 Run Queue High Length: 0
-Run Queue Normal Length: 61
-Run Queue Low Length: 0
-Run Queue Port Length: 0
-Run Queue Flags: NONEMPTY_NORMAL | OUT_OF_WORK | HALFTIME_OUT_OF_WORK | NONEMPTY | UNKNOWN(134217728)
-Current Process: 
-=scheduler:4
-Scheduler Sleep Info Flags: 
-Scheduler Sleep Info Aux Work: DELAYED_AW_WAKEUP | DD | DD_THR_PRGR | THR_PRGR_LATER_OP
-Current Port: 
-Run Queue Max Length: 0
-Run Queue High Length: 0
-Run Queue Normal Length: 87
+Run Queue Normal Length: 74
 Run Queue Low Length: 0
 Run Queue Port Length: 0
 Run Queue Flags: NONEMPTY_NORMAL | OUT_OF_WORK | HALFTIME_OUT_OF_WORK | NONEMPTY | UNKNOWN(134217728)
 Current Process: <0.0.0>
 Current Process State: Running
 Current Process Internal State: ACT_PRIO_NORMAL | USR_PRIO_NORMAL | PRQ_PRIO_NORMAL | ACTIVE | RUNNING | TRAP_EXIT | ON_HEAP_MSGQ
-Current Process Program counter: 0x000002a0395c2688 (init:boot_loop/2 + 48)
+Current Process Program counter: 0x0000017ec7942688 (init:boot_loop/2 + 48)
 Current Process CP: 0x0000000000000000 (invalid)
 Current Process Limited Stack Trace:
-0x000002a03a920830:SReturn addr 0x7CFB0E08 (<terminate process normally>)
+0x0000017ec5e1e8d0:SReturn addr 0x7D920E08 (<terminate process normally>)
+=scheduler:3
+Scheduler Sleep Info Flags: SLEEPING | TSE_SLEEPING
+Scheduler Sleep Info Aux Work: DD | DD_THR_PRGR
+Current Port: 
+Run Queue Max Length: 0
+Run Queue High Length: 0
+Run Queue Normal Length: 76
+Run Queue Low Length: 0
+Run Queue Port Length: 0
+Run Queue Flags: NONEMPTY_NORMAL | OUT_OF_WORK | HALFTIME_OUT_OF_WORK | NONEMPTY
+Current Process: 
+=scheduler:4
+Scheduler Sleep Info Flags: SLEEPING | TSE_SLEEPING
+Scheduler Sleep Info Aux Work: DELAYED_AW_WAKEUP | DD | THR_PRGR_LATER_OP
+Current Port: 
+Run Queue Max Length: 0
+Run Queue High Length: 0
+Run Queue Normal Length: 116
+Run Queue Low Length: 0
+Run Queue Port Length: 0
+Run Queue Flags: NONEMPTY_NORMAL | OUT_OF_WORK | HALFTIME_OUT_OF_WORK | NONEMPTY | UNKNOWN(134217728)
+Current Process: 
 =memory
-total: 20122032
-processes: 11368200
-processes_used: 11353544
-system: 8753832
+total: 20023792
+processes: 11266408
+processes_used: 11218088
+system: 8757384
 atom: 194313
-atom_used: 177515
-binary: 113840
-code: 4055268
-ets: 277976
+atom_used: 177523
+binary: 118560
+code: 4056764
+ets: 278008
 =hash_table:atom_tab
 size: 4813
 used: 3670
-objs: 7089
+objs: 7091
 depth: 8
 =index_table:atom_tab
 size: 7168
 limit: 1048576
-entries: 7089
+entries: 7091
 =hash_table:module_code
 size: 97
-used: 65
+used: 66
 objs: 90
 depth: 3
 =index_table:module_code
@@ -86,21 +86,21 @@ limit: 65536
 entries: 90
 =hash_table:export_list
 size: 3203
-used: 1780
-objs: 2570
+used: 1771
+objs: 2571
 depth: 5
 =index_table:export_list
 size: 3072
 limit: 524288
-entries: 2570
+entries: 2571
 =hash_table:export_list
 size: 3203
-used: 1768
-objs: 2549
+used: 1761
+objs: 2550
 depth: 5
 =hash_table:process_reg
 size: 23
-used: 13
+used: 14
 objs: 22
 depth: 4
 =hash_table:fun_table
@@ -121,15 +121,15 @@ depth: 1
 =allocated_areas
 sys_misc: 26245
 static: 2098336
-atom_space: 98328 81530
+atom_space: 98328 81538
 atom_table: 95985
 module_table: 53544
 export_table: 151020
-export_list: 452320
+export_list: 452496
 register_table: 300
 fun_table: 3290
 module_refs: 4272
-loaded_code: 3390822
+loaded_code: 3392142
 dist_table: 1035
 node_table: 299
 bits_bufs_size: 0
@@ -188,8 +188,8 @@ option smbcs: 1048576
 option mbcgs: 10
 option acul: 0
 option as: af
-mbcs blocks: 0 4 4
-mbcs blocks size: 0 8240 8240
+mbcs blocks: 1 4 4
+mbcs blocks size: 8208 20544 20544
 mbcs carriers: 1 1 1
 mbcs sys_alloc carriers: 1
 mbcs carriers size: 131072 131072 131072
@@ -200,9 +200,9 @@ sbcs carriers: 0 0 0
 sbcs sys_alloc carriers: 0
 sbcs carriers size: 0 0 0
 sbcs sys_alloc carriers size: 0
-temp_alloc calls: 936821
-temp_free calls: 936821
-temp_realloc calls: 4
+temp_alloc calls: 650431
+temp_free calls: 650430
+temp_realloc calls: 0
 sys_alloc calls: 1
 sys_free calls: 0
 sys_realloc calls: 0
@@ -221,7 +221,7 @@ option mbcgs: 10
 option acul: 0
 option as: af
 mbcs blocks: 0 4 4
-mbcs blocks size: 0 12112 12112
+mbcs blocks size: 0 8784 8784
 mbcs carriers: 1 1 1
 mbcs sys_alloc carriers: 1
 mbcs carriers size: 131072 131072 131072
@@ -232,45 +232,13 @@ sbcs carriers: 0 0 0
 sbcs sys_alloc carriers: 0
 sbcs carriers size: 0 0 0
 sbcs sys_alloc carriers size: 0
-temp_alloc calls: 643940
-temp_free calls: 643940
-temp_realloc calls: 6
+temp_alloc calls: 325763
+temp_free calls: 325763
+temp_realloc calls: 3
 sys_alloc calls: 1
 sys_free calls: 0
 sys_realloc calls: 0
 =allocator:temp_alloc[3]
-versions: 0.9 3.0
-option e: true
-option t: 5
-option ramv: false
-option sbct: 524288
-option rsbcmt: 80
-option rmbcmt: 100
-option mmbcs: 131072
-option lmbcs: 10485760
-option smbcs: 1048576
-option mbcgs: 10
-option acul: 0
-option as: af
-mbcs blocks: 0 4 4
-mbcs blocks size: 0 20544 20544
-mbcs carriers: 1 1 1
-mbcs sys_alloc carriers: 1
-mbcs carriers size: 131072 131072 131072
-mbcs sys_alloc carriers size: 131072
-sbcs blocks: 0 0 0
-sbcs blocks size: 0 0 0
-sbcs carriers: 0 0 0
-sbcs sys_alloc carriers: 0
-sbcs carriers size: 0 0 0
-sbcs sys_alloc carriers size: 0
-temp_alloc calls: 609930
-temp_free calls: 609930
-temp_realloc calls: 0
-sys_alloc calls: 1
-sys_free calls: 0
-sys_realloc calls: 0
-=allocator:temp_alloc[4]
 versions: 0.9 3.0
 option e: true
 option t: 5
@@ -296,9 +264,41 @@ sbcs carriers: 0 0 0
 sbcs sys_alloc carriers: 0
 sbcs carriers size: 0 0 0
 sbcs sys_alloc carriers size: 0
-temp_alloc calls: 555026
-temp_free calls: 555026
-temp_realloc calls: 3
+temp_alloc calls: 391784
+temp_free calls: 391784
+temp_realloc calls: 0
+sys_alloc calls: 1
+sys_free calls: 0
+sys_realloc calls: 0
+=allocator:temp_alloc[4]
+versions: 0.9 3.0
+option e: true
+option t: 5
+option ramv: false
+option sbct: 524288
+option rsbcmt: 80
+option rmbcmt: 100
+option mmbcs: 131072
+option lmbcs: 10485760
+option smbcs: 1048576
+option mbcgs: 10
+option acul: 0
+option as: af
+mbcs blocks: 0 4 4
+mbcs blocks size: 0 12112 12112
+mbcs carriers: 1 1 1
+mbcs sys_alloc carriers: 1
+mbcs carriers size: 131072 131072 131072
+mbcs sys_alloc carriers size: 131072
+sbcs blocks: 0 0 0
+sbcs blocks size: 0 0 0
+sbcs carriers: 0 0 0
+sbcs sys_alloc carriers: 0
+sbcs carriers size: 0 0 0
+sbcs sys_alloc carriers size: 0
+temp_alloc calls: 367878
+temp_free calls: 367878
+temp_realloc calls: 10
 sys_alloc calls: 1
 sys_free calls: 0
 sys_realloc calls: 0
@@ -348,8 +348,8 @@ option smbcs: 262144
 option mbcgs: 10
 option acul: 60
 option as: aoffcbf
-mbcs blocks: 0 249 249
-mbcs blocks size: 0 139376 139376
+mbcs blocks: 0 335 335
+mbcs blocks size: 0 187440 187440
 mbcs carriers: 1 2 2
 mbcs sys_alloc carriers: 1
 mbcs carriers size: 32768 1081344 1081344
@@ -364,8 +364,8 @@ sbcs carriers: 0 0 0
 sbcs sys_alloc carriers: 0
 sbcs carriers size: 0 0 0
 sbcs sys_alloc carriers size: 0
-sl_alloc calls: 9262
-sl_free calls: 9262
+sl_alloc calls: 8427
+sl_free calls: 8427
 sl_realloc calls: 0
 sys_alloc calls: 2
 sys_free calls: 1
@@ -384,8 +384,8 @@ option smbcs: 262144
 option mbcgs: 10
 option acul: 60
 option as: aoffcbf
-mbcs blocks: 0 298 298
-mbcs blocks size: 0 89376 89376
+mbcs blocks: 0 676 676
+mbcs blocks size: 0 287488 287488
 mbcs carriers: 1 2 2
 mbcs sys_alloc carriers: 1
 mbcs carriers size: 32768 1081344 1081344
@@ -400,11 +400,11 @@ sbcs carriers: 0 0 0
 sbcs sys_alloc carriers: 0
 sbcs carriers size: 0 0 0
 sbcs sys_alloc carriers size: 0
-sl_alloc calls: 5964
-sl_free calls: 5964
+sl_alloc calls: 1297
+sl_free calls: 1297
 sl_realloc calls: 0
-sys_alloc calls: 9
-sys_free calls: 8
+sys_alloc calls: 2
+sys_free calls: 1
 sys_realloc calls: 0
 =allocator:sl_alloc[3]
 versions: 0.9 3.0
@@ -420,8 +420,8 @@ option smbcs: 262144
 option mbcgs: 10
 option acul: 60
 option as: aoffcbf
-mbcs blocks: 0 711 711
-mbcs blocks size: 0 372112 372112
+mbcs blocks: 0 502 502
+mbcs blocks size: 0 230048 230048
 mbcs carriers: 1 2 2
 mbcs sys_alloc carriers: 1
 mbcs carriers size: 32768 1081344 1081344
@@ -436,8 +436,8 @@ sbcs carriers: 0 0 0
 sbcs sys_alloc carriers: 0
 sbcs carriers size: 0 0 0
 sbcs sys_alloc carriers size: 0
-sl_alloc calls: 3120
-sl_free calls: 3120
+sl_alloc calls: 1738
+sl_free calls: 1738
 sl_realloc calls: 0
 sys_alloc calls: 2
 sys_free calls: 1
@@ -456,8 +456,8 @@ option smbcs: 262144
 option mbcgs: 10
 option acul: 60
 option as: aoffcbf
-mbcs blocks: 0 546 546
-mbcs blocks size: 0 213808 213808
+mbcs blocks: 0 298 298
+mbcs blocks size: 0 109664 109664
 mbcs carriers: 1 2 2
 mbcs sys_alloc carriers: 1
 mbcs carriers size: 32768 1081344 1081344
@@ -472,11 +472,11 @@ sbcs carriers: 0 0 0
 sbcs sys_alloc carriers: 0
 sbcs carriers size: 0 0 0
 sbcs sys_alloc carriers size: 0
-sl_alloc calls: 3351
-sl_free calls: 3351
+sl_alloc calls: 5318
+sl_free calls: 5318
 sl_realloc calls: 2
-sys_alloc calls: 4
-sys_free calls: 3
+sys_alloc calls: 11
+sys_free calls: 10
 sys_realloc calls: 0
 =allocator:std_alloc[0]
 versions: 0.9 3.0
@@ -524,8 +524,8 @@ option smbcs: 262144
 option mbcgs: 10
 option acul: 60
 option as: aoffcbf
-mbcs blocks: 8 8 8
-mbcs blocks size: 1968 8928 8928
+mbcs blocks: 7 7 7
+mbcs blocks size: 1904 7344 7344
 mbcs carriers: 1 1 1
 mbcs sys_alloc carriers: 1
 mbcs carriers size: 32768 32768 32768
@@ -540,8 +540,8 @@ sbcs carriers: 0 0 0
 sbcs sys_alloc carriers: 0
 sbcs carriers size: 0 0 0
 sbcs sys_alloc carriers size: 0
-std_alloc calls: 19
-std_free calls: 11
+std_alloc calls: 14
+std_free calls: 7
 std_realloc calls: 0
 sys_alloc calls: 1
 sys_free calls: 0
@@ -560,8 +560,8 @@ option smbcs: 262144
 option mbcgs: 10
 option acul: 60
 option as: aoffcbf
-mbcs blocks: 47 49 49
-mbcs blocks size: 9312 18704 18704
+mbcs blocks: 1 3 3
+mbcs blocks size: 64 8800 8800
 mbcs carriers: 1 1 1
 mbcs sys_alloc carriers: 1
 mbcs carriers size: 32768 32768 32768
@@ -576,8 +576,8 @@ sbcs carriers: 0 0 0
 sbcs sys_alloc carriers: 0
 sbcs carriers size: 0 0 0
 sbcs sys_alloc carriers size: 0
-std_alloc calls: 132
-std_free calls: 85
+std_alloc calls: 10
+std_free calls: 9
 std_realloc calls: 0
 sys_alloc calls: 1
 sys_free calls: 0
@@ -596,8 +596,8 @@ option smbcs: 262144
 option mbcgs: 10
 option acul: 60
 option as: aoffcbf
-mbcs blocks: 0 1 1
-mbcs blocks size: 0 7152 7152
+mbcs blocks: 1 3 3
+mbcs blocks size: 3184 11120 11120
 mbcs carriers: 1 1 1
 mbcs sys_alloc carriers: 1
 mbcs carriers size: 32768 32768 32768
@@ -612,8 +612,8 @@ sbcs carriers: 0 0 0
 sbcs sys_alloc carriers: 0
 sbcs carriers size: 0 0 0
 sbcs sys_alloc carriers size: 0
-std_alloc calls: 6
-std_free calls: 6
+std_alloc calls: 9
+std_free calls: 8
 std_realloc calls: 0
 sys_alloc calls: 1
 sys_free calls: 0
@@ -632,8 +632,8 @@ option smbcs: 262144
 option mbcgs: 10
 option acul: 60
 option as: aoffcbf
-mbcs blocks: 4 6 6
-mbcs blocks size: 2352 11424 11424
+mbcs blocks: 47 52 52
+mbcs blocks size: 8240 17008 17008
 mbcs carriers: 1 1 1
 mbcs sys_alloc carriers: 1
 mbcs carriers size: 32768 32768 32768
@@ -648,8 +648,8 @@ sbcs carriers: 0 0 0
 sbcs sys_alloc carriers: 0
 sbcs carriers size: 0 0 0
 sbcs sys_alloc carriers size: 0
-std_alloc calls: 27
-std_free calls: 23
+std_alloc calls: 151
+std_free calls: 104
 std_realloc calls: 0
 sys_alloc calls: 1
 sys_free calls: 0
@@ -700,12 +700,12 @@ option smbcs: 262144
 option mbcgs: 10
 option acul: 85
 option as: aoffcbf
-mbcs blocks: 774 774 774
-mbcs blocks size: 407856 490912 490912
-mbcs carriers: 1 1 1
-mbcs sys_alloc carriers: 1
-mbcs carriers size: 524288 524288 524288
-mbcs sys_alloc carriers size: 524288
+mbcs blocks: 1790 1790 1790
+mbcs blocks size: 685280 837952 837952
+mbcs carriers: 2 2 2
+mbcs sys_alloc carriers: 2
+mbcs carriers size: 1572864 1572864 1572864
+mbcs sys_alloc carriers size: 1572864
 mbcs_pool blocks: 0
 mbcs_pool blocks size: 0
 mbcs_pool carriers: 0
@@ -716,11 +716,11 @@ sbcs carriers: 0 0 0
 sbcs sys_alloc carriers: 0
 sbcs carriers size: 0 0 0
 sbcs sys_alloc carriers size: 0
-ll_alloc calls: 775
+ll_alloc calls: 1791
 ll_free calls: 1
-ll_realloc calls: 18
-sys_alloc calls: 1
-sys_free calls: 0
+ll_realloc calls: 16
+sys_alloc calls: 3
+sys_free calls: 1
 sys_realloc calls: 0
 =allocator:ll_alloc[2]
 versions: 0.9 3.0
@@ -736,12 +736,12 @@ option smbcs: 262144
 option mbcgs: 10
 option acul: 85
 option as: aoffcbf
-mbcs blocks: 4287 4287 4287
-mbcs blocks size: 1917696 1929232 1929232
-mbcs carriers: 3 3 3
-mbcs sys_alloc carriers: 3
-mbcs carriers size: 2621440 2621440 2621440
-mbcs sys_alloc carriers size: 2621440
+mbcs blocks: 989 990 990
+mbcs blocks size: 521840 720992 720992
+mbcs carriers: 2 2 2
+mbcs sys_alloc carriers: 2
+mbcs carriers size: 1572864 1572864 1572864
+mbcs sys_alloc carriers size: 1572864
 mbcs_pool blocks: 0
 mbcs_pool blocks size: 0
 mbcs_pool carriers: 0
@@ -752,10 +752,10 @@ sbcs carriers: 0 0 0
 sbcs sys_alloc carriers: 0
 sbcs carriers size: 0 0 0
 sbcs sys_alloc carriers size: 0
-ll_alloc calls: 4287
+ll_alloc calls: 989
 ll_free calls: 0
-ll_realloc calls: 84
-sys_alloc calls: 3
+ll_realloc calls: 15
+sys_alloc calls: 2
 sys_free calls: 0
 sys_realloc calls: 0
 =allocator:ll_alloc[3]
@@ -772,12 +772,12 @@ option smbcs: 262144
 option mbcgs: 10
 option acul: 85
 option as: aoffcbf
-mbcs blocks: 1484 1485 1485
-mbcs blocks size: 759952 847040 847040
-mbcs carriers: 2 2 2
-mbcs sys_alloc carriers: 2
-mbcs carriers size: 1572864 1572864 1572864
-mbcs sys_alloc carriers size: 1572864
+mbcs blocks: 759 760 760
+mbcs blocks size: 505920 647776 647776
+mbcs carriers: 1 2 2
+mbcs sys_alloc carriers: 1
+mbcs carriers size: 524288 1572864 1572864
+mbcs sys_alloc carriers size: 524288
 mbcs_pool blocks: 0
 mbcs_pool blocks size: 0
 mbcs_pool carriers: 0
@@ -788,10 +788,10 @@ sbcs carriers: 0 0 0
 sbcs sys_alloc carriers: 0
 sbcs carriers size: 0 0 0
 sbcs sys_alloc carriers size: 0
-ll_alloc calls: 1484
+ll_alloc calls: 759
 ll_free calls: 0
-ll_realloc calls: 17
-sys_alloc calls: 3
+ll_realloc calls: 23
+sys_alloc calls: 2
 sys_free calls: 1
 sys_realloc calls: 0
 =allocator:ll_alloc[4]
@@ -808,12 +808,12 @@ option smbcs: 262144
 option mbcgs: 10
 option acul: 85
 option as: aoffcbf
-mbcs blocks: 1223 1223 1223
-mbcs blocks size: 770656 783008 783008
-mbcs carriers: 2 2 2
-mbcs sys_alloc carriers: 2
-mbcs carriers size: 1572864 1572864 1572864
-mbcs sys_alloc carriers size: 1572864
+mbcs blocks: 4232 4232 4232
+mbcs blocks size: 2142768 2157824 2157824
+mbcs carriers: 3 3 3
+mbcs sys_alloc carriers: 3
+mbcs carriers size: 2621440 2621440 2621440
+mbcs sys_alloc carriers size: 2621440
 mbcs_pool blocks: 0
 mbcs_pool blocks size: 0
 mbcs_pool carriers: 0
@@ -824,10 +824,10 @@ sbcs carriers: 0 0 0
 sbcs sys_alloc carriers: 0
 sbcs carriers size: 0 0 0
 sbcs sys_alloc carriers size: 0
-ll_alloc calls: 1223
+ll_alloc calls: 4232
 ll_free calls: 0
-ll_realloc calls: 37
-sys_alloc calls: 2
+ll_realloc calls: 102
+sys_alloc calls: 3
 sys_free calls: 0
 sys_realloc calls: 0
 =allocator:eheap_alloc[0]
@@ -876,12 +876,12 @@ option smbcs: 262144
 option mbcgs: 10
 option acul: 45
 option as: aoffcbf
-mbcs blocks: 415 612 612
-mbcs blocks size: 2625696 4063920 4063920
-mbcs carriers: 5 6 6
-mbcs sys_alloc carriers: 5
-mbcs carriers size: 4325376 5373952 5373952
-mbcs sys_alloc carriers size: 4325376
+mbcs blocks: 516 694 694
+mbcs blocks size: 3522704 6081472 6081472
+mbcs carriers: 6 8 8
+mbcs sys_alloc carriers: 6
+mbcs carriers size: 5373952 7471104 7471104
+mbcs sys_alloc carriers size: 5373952
 mbcs_pool blocks: 0
 mbcs_pool blocks size: 0
 mbcs_pool carriers: 0
@@ -892,11 +892,11 @@ sbcs carriers: 0 0 0
 sbcs sys_alloc carriers: 0
 sbcs carriers size: 0 0 0
 sbcs sys_alloc carriers size: 0
-eheap_alloc calls: 33278
-eheap_free calls: 32868
-eheap_realloc calls: 1264
-sys_alloc calls: 9
-sys_free calls: 5
+eheap_alloc calls: 26279
+eheap_free calls: 25800
+eheap_realloc calls: 1135
+sys_alloc calls: 29
+sys_free calls: 24
 sys_realloc calls: 0
 =allocator:eheap_alloc[2]
 versions: 0.9 3.0
@@ -912,12 +912,12 @@ option smbcs: 262144
 option mbcgs: 10
 option acul: 45
 option as: aoffcbf
-mbcs blocks: 389 456 456
-mbcs blocks size: 2390096 2925120 2925120
-mbcs carriers: 4 4 4
-mbcs sys_alloc carriers: 4
-mbcs carriers size: 3276800 3276800 3276800
-mbcs sys_alloc carriers size: 3276800
+mbcs blocks: 205 376 376
+mbcs blocks size: 1001312 2077264 2077264
+mbcs carriers: 3 3 3
+mbcs sys_alloc carriers: 3
+mbcs carriers size: 2228224 2228224 2228224
+mbcs sys_alloc carriers size: 2228224
 mbcs_pool blocks: 0
 mbcs_pool blocks size: 0
 mbcs_pool carriers: 0
@@ -928,11 +928,11 @@ sbcs carriers: 0 0 0
 sbcs sys_alloc carriers: 0
 sbcs carriers size: 0 0 0
 sbcs sys_alloc carriers size: 0
-eheap_alloc calls: 23657
-eheap_free calls: 23272
-eheap_realloc calls: 825
-sys_alloc calls: 9
-sys_free calls: 6
+eheap_alloc calls: 14598
+eheap_free calls: 14379
+eheap_realloc calls: 399
+sys_alloc calls: 16
+sys_free calls: 13
 sys_realloc calls: 0
 =allocator:eheap_alloc[3]
 versions: 0.9 3.0
@@ -948,12 +948,12 @@ option smbcs: 262144
 option mbcgs: 10
 option acul: 45
 option as: aoffcbf
-mbcs blocks: 219 391 391
-mbcs blocks size: 1145040 2217760 2217760
-mbcs carriers: 3 4 4
-mbcs sys_alloc carriers: 3
-mbcs carriers size: 2228224 3276800 3276800
-mbcs sys_alloc carriers size: 2228224
+mbcs blocks: 378 551 551
+mbcs blocks size: 1591216 2234256 2234256
+mbcs carriers: 4 4 4
+mbcs sys_alloc carriers: 4
+mbcs carriers size: 3276800 3276800 3276800
+mbcs sys_alloc carriers size: 3276800
 mbcs_pool blocks: 0
 mbcs_pool blocks size: 0
 mbcs_pool carriers: 0
@@ -964,11 +964,11 @@ sbcs carriers: 0 0 0
 sbcs sys_alloc carriers: 0
 sbcs carriers size: 0 0 0
 sbcs sys_alloc carriers size: 0
-eheap_alloc calls: 22278
-eheap_free calls: 22040
-eheap_realloc calls: 674
-sys_alloc calls: 16
-sys_free calls: 12
+eheap_alloc calls: 16229
+eheap_free calls: 15846
+eheap_realloc calls: 509
+sys_alloc calls: 22
+sys_free calls: 18
 sys_realloc calls: 0
 =allocator:eheap_alloc[4]
 versions: 0.9 3.0
@@ -984,11 +984,11 @@ option smbcs: 262144
 option mbcgs: 10
 option acul: 45
 option as: aoffcbf
-mbcs blocks: 261 399 399
-mbcs blocks size: 1604096 2303248 2303248
-mbcs carriers: 3 4 4
+mbcs blocks: 315 446 446
+mbcs blocks size: 1547728 1931008 1931008
+mbcs carriers: 3 3 3
 mbcs sys_alloc carriers: 3
-mbcs carriers size: 2228224 3276800 3276800
+mbcs carriers size: 2228224 2228224 2228224
 mbcs sys_alloc carriers size: 2228224
 mbcs_pool blocks: 0
 mbcs_pool blocks size: 0
@@ -1000,11 +1000,11 @@ sbcs carriers: 0 0 0
 sbcs sys_alloc carriers: 0
 sbcs carriers size: 0 0 0
 sbcs sys_alloc carriers size: 0
-eheap_alloc calls: 20470
-eheap_free calls: 20219
-eheap_realloc calls: 713
-sys_alloc calls: 9
-sys_free calls: 5
+eheap_alloc calls: 15636
+eheap_free calls: 15303
+eheap_realloc calls: 489
+sys_alloc calls: 11
+sys_free calls: 7
 sys_realloc calls: 0
 =allocator:ets_alloc[0]
 versions: 0.9 3.0
@@ -1052,8 +1052,8 @@ option smbcs: 262144
 option mbcgs: 10
 option acul: 60
 option as: aoffcbf
-mbcs blocks: 9 12 12
-mbcs blocks size: 8272 9184 9184
+mbcs blocks: 7 11 11
+mbcs blocks size: 6208 7344 7344
 mbcs carriers: 1 1 1
 mbcs sys_alloc carriers: 1
 mbcs carriers size: 32768 32768 32768
@@ -1068,9 +1068,9 @@ sbcs carriers: 0 0 0
 sbcs sys_alloc carriers: 0
 sbcs carriers size: 0 0 0
 sbcs sys_alloc carriers size: 0
-ets_alloc calls: 11
-ets_free calls: 2
-ets_realloc calls: 1
+ets_alloc calls: 17
+ets_free calls: 10
+ets_realloc calls: 4
 sys_alloc calls: 1
 sys_free calls: 0
 sys_realloc calls: 0
@@ -1088,12 +1088,12 @@ option smbcs: 262144
 option mbcgs: 10
 option acul: 60
 option as: aoffcbf
-mbcs blocks: 421 422 422
-mbcs blocks size: 190816 191216 191216
-mbcs carriers: 2 2 2
-mbcs sys_alloc carriers: 2
-mbcs carriers size: 1081344 1081344 1081344
-mbcs sys_alloc carriers size: 1081344
+mbcs blocks: 0 0 0
+mbcs blocks size: 0 0 0
+mbcs carriers: 1 1 1
+mbcs sys_alloc carriers: 1
+mbcs carriers size: 32768 32768 32768
+mbcs sys_alloc carriers size: 32768
 mbcs_pool blocks: 0
 mbcs_pool blocks size: 0
 mbcs_pool carriers: 0
@@ -1104,10 +1104,10 @@ sbcs carriers: 0 0 0
 sbcs sys_alloc carriers: 0
 sbcs carriers size: 0 0 0
 sbcs sys_alloc carriers size: 0
-ets_alloc calls: 424
-ets_free calls: 3
-ets_realloc calls: 2
-sys_alloc calls: 2
+ets_alloc calls: 0
+ets_free calls: 0
+ets_realloc calls: 0
+sys_alloc calls: 1
 sys_free calls: 0
 sys_realloc calls: 0
 =allocator:ets_alloc[3]
@@ -1160,12 +1160,12 @@ option smbcs: 262144
 option mbcgs: 10
 option acul: 60
 option as: aoffcbf
-mbcs blocks: 8 12 12
-mbcs blocks size: 8384 9520 9520
-mbcs carriers: 1 1 1
-mbcs sys_alloc carriers: 1
-mbcs carriers size: 32768 32768 32768
-mbcs sys_alloc carriers size: 32768
+mbcs blocks: 431 432 432
+mbcs blocks size: 201296 201696 201696
+mbcs carriers: 2 2 2
+mbcs sys_alloc carriers: 2
+mbcs carriers size: 1081344 1081344 1081344
+mbcs sys_alloc carriers size: 1081344
 mbcs_pool blocks: 0
 mbcs_pool blocks size: 0
 mbcs_pool carriers: 0
@@ -1176,10 +1176,10 @@ sbcs carriers: 0 0 0
 sbcs sys_alloc carriers: 0
 sbcs carriers size: 0 0 0
 sbcs sys_alloc carriers size: 0
-ets_alloc calls: 17
-ets_free calls: 9
-ets_realloc calls: 3
-sys_alloc calls: 1
+ets_alloc calls: 435
+ets_free calls: 4
+ets_realloc calls: 2
+sys_alloc calls: 2
 sys_free calls: 0
 sys_realloc calls: 0
 =allocator:fix_alloc[0]
@@ -1204,10 +1204,10 @@ fix type: sl_thr_q_element 0 0
 fix type: bif_timer 0 0
 fix type: hl_ptimer 0 0
 fix type: ll_ptimer 0 0
-fix type: msg_ref 0 0
+fix type: msg_ref 32 32
 fix type: proc 1488 1488
-mbcs blocks: 2 2 2
-mbcs blocks size: 1504 1504 1504
+mbcs blocks: 3 3 3
+mbcs blocks size: 1568 1568 1568
 mbcs carriers: 1 1 1
 mbcs sys_alloc carriers: 1
 mbcs carriers size: 32768 32768 32768
@@ -1218,7 +1218,7 @@ sbcs carriers: 0 0 0
 sbcs sys_alloc carriers: 0
 sbcs carriers size: 0 0 0
 sbcs sys_alloc carriers size: 0
-fix_alloc calls: 2
+fix_alloc calls: 3
 fix_free calls: 0
 fix_realloc calls: 0
 sys_alloc calls: 1
@@ -1238,12 +1238,12 @@ option smbcs: 262144
 option mbcgs: 10
 option acul: 60
 option as: aoffcbf
-mbcs blocks: 585 797 797
-mbcs blocks size: 103648 118832 118832
-mbcs carriers: 2 2 2
-mbcs sys_alloc carriers: 2
-mbcs carriers size: 1081344 1081344 1081344
-mbcs sys_alloc carriers size: 1081344
+mbcs blocks: 233 467 467
+mbcs blocks size: 17776 33936 33936
+mbcs carriers: 1 2 2
+mbcs sys_alloc carriers: 1
+mbcs carriers size: 32768 1081344 1081344
+mbcs sys_alloc carriers size: 32768
 mbcs_pool blocks: 0
 mbcs_pool blocks size: 0
 mbcs_pool carriers: 0
@@ -1254,11 +1254,11 @@ sbcs carriers: 0 0 0
 sbcs sys_alloc carriers: 0
 sbcs carriers size: 0 0 0
 sbcs sys_alloc carriers size: 0
-fix_alloc calls: 3884674
-fix_free calls: 3884210
+fix_alloc calls: 3112239
+fix_free calls: 3112006
 fix_realloc calls: 0
-sys_alloc calls: 2
-sys_free calls: 0
+sys_alloc calls: 3
+sys_free calls: 2
 sys_realloc calls: 0
 =allocator:fix_alloc[2]
 versions: 0.9 3.0
@@ -1274,12 +1274,12 @@ option smbcs: 262144
 option mbcgs: 10
 option acul: 60
 option as: aoffcbf
-mbcs blocks: 1302 1546 1546
-mbcs blocks size: 313552 331616 331616
-mbcs carriers: 2 2 2
-mbcs sys_alloc carriers: 2
-mbcs carriers size: 1081344 1081344 1081344
-mbcs sys_alloc carriers size: 1081344
+mbcs blocks: 264 389 389
+mbcs blocks size: 17056 25248 25248
+mbcs carriers: 1 1 1
+mbcs sys_alloc carriers: 1
+mbcs carriers size: 32768 32768 32768
+mbcs sys_alloc carriers size: 32768
 mbcs_pool blocks: 0
 mbcs_pool blocks size: 0
 mbcs_pool carriers: 0
@@ -1290,10 +1290,10 @@ sbcs carriers: 0 0 0
 sbcs sys_alloc carriers: 0
 sbcs carriers size: 0 0 0
 sbcs sys_alloc carriers size: 0
-fix_alloc calls: 1631251
-fix_free calls: 1630071
+fix_alloc calls: 775101
+fix_free calls: 774997
 fix_realloc calls: 0
-sys_alloc calls: 2
+sys_alloc calls: 1
 sys_free calls: 0
 sys_realloc calls: 0
 =allocator:fix_alloc[3]
@@ -1310,8 +1310,8 @@ option smbcs: 262144
 option mbcgs: 10
 option acul: 60
 option as: aoffcbf
-mbcs blocks: 227 494 494
-mbcs blocks size: 14688 33232 33232
+mbcs blocks: 240 491 491
+mbcs blocks size: 15520 32880 32880
 mbcs carriers: 1 2 2
 mbcs sys_alloc carriers: 1
 mbcs carriers size: 32768 1081344 1081344
@@ -1326,8 +1326,8 @@ sbcs carriers: 0 0 0
 sbcs sys_alloc carriers: 0
 sbcs carriers size: 0 0 0
 sbcs sys_alloc carriers size: 0
-fix_alloc calls: 1532153
-fix_free calls: 1532061
+fix_alloc calls: 811557
+fix_free calls: 811436
 fix_realloc calls: 0
 sys_alloc calls: 2
 sys_free calls: 1
@@ -1346,12 +1346,12 @@ option smbcs: 262144
 option mbcgs: 10
 option acul: 60
 option as: aoffcbf
-mbcs blocks: 243 542 542
-mbcs blocks size: 15680 37776 37776
-mbcs carriers: 1 2 2
-mbcs sys_alloc carriers: 1
-mbcs carriers size: 32768 1081344 1081344
-mbcs sys_alloc carriers size: 32768
+mbcs blocks: 1622 1655 1655
+mbcs blocks size: 396720 398816 398816
+mbcs carriers: 2 2 2
+mbcs sys_alloc carriers: 2
+mbcs carriers size: 1081344 1081344 1081344
+mbcs sys_alloc carriers size: 1081344
 mbcs_pool blocks: 0
 mbcs_pool blocks size: 0
 mbcs_pool carriers: 0
@@ -1362,11 +1362,11 @@ sbcs carriers: 0 0 0
 sbcs sys_alloc carriers: 0
 sbcs carriers size: 0 0 0
 sbcs sys_alloc carriers size: 0
-fix_alloc calls: 1343664
-fix_free calls: 1343498
+fix_alloc calls: 824135
+fix_free calls: 823496
 fix_realloc calls: 0
-sys_alloc calls: 3
-sys_free calls: 2
+sys_alloc calls: 2
+sys_free calls: 0
 sys_realloc calls: 0
 =allocator:literal_alloc
 versions: 0.9 3.0
@@ -1415,7 +1415,7 @@ option mbcgs: 10
 option acul: 0
 option as: aoffcbf
 mbcs blocks: 6 23 23
-mbcs blocks size: 93952 1189200 1189200
+mbcs blocks size: 95456 1189200 1189200
 mbcs carriers: 2 3 3
 mbcs sys_alloc carriers: 2
 mbcs carriers size: 1081344 2129920 2129920
@@ -1429,8 +1429,8 @@ sbcs sys_alloc carriers size: 0
 binary_alloc calls: 91
 binary_free calls: 85
 binary_realloc calls: 0
-sys_alloc calls: 8
-sys_free calls: 6
+sys_alloc calls: 7
+sys_free calls: 5
 sys_realloc calls: 0
 =allocator:binary_alloc[1]
 versions: 0.9 3.0
@@ -1446,8 +1446,8 @@ option smbcs: 262144
 option mbcgs: 10
 option acul: 60
 option as: aoffcbf
-mbcs blocks: 6 32 32
-mbcs blocks size: 3232 15648 15648
+mbcs blocks: 7 32 32
+mbcs blocks size: 7344 15568 15568
 mbcs carriers: 1 1 1
 mbcs sys_alloc carriers: 1
 mbcs carriers size: 32768 32768 32768
@@ -1462,8 +1462,8 @@ sbcs carriers: 0 0 0
 sbcs sys_alloc carriers: 0
 sbcs carriers size: 0 0 0
 sbcs sys_alloc carriers size: 0
-binary_alloc calls: 13591
-binary_free calls: 13585
+binary_alloc calls: 10370
+binary_free calls: 10363
 binary_realloc calls: 0
 sys_alloc calls: 1
 sys_free calls: 0
@@ -1482,8 +1482,8 @@ option smbcs: 262144
 option mbcgs: 10
 option acul: 60
 option as: aoffcbf
-mbcs blocks: 16 29 29
-mbcs blocks size: 7616 16176 16176
+mbcs blocks: 6 26 26
+mbcs blocks size: 3040 9984 9984
 mbcs carriers: 1 1 1
 mbcs sys_alloc carriers: 1
 mbcs carriers size: 32768 32768 32768
@@ -1498,8 +1498,8 @@ sbcs carriers: 0 0 0
 sbcs sys_alloc carriers: 0
 sbcs carriers size: 0 0 0
 sbcs sys_alloc carriers size: 0
-binary_alloc calls: 5684
-binary_free calls: 5668
+binary_alloc calls: 2256
+binary_free calls: 2250
 binary_realloc calls: 0
 sys_alloc calls: 1
 sys_free calls: 0
@@ -1518,8 +1518,8 @@ option smbcs: 262144
 option mbcgs: 10
 option acul: 60
 option as: aoffcbf
-mbcs blocks: 2 25 25
-mbcs blocks size: 1808 9136 9136
+mbcs blocks: 7 26 26
+mbcs blocks size: 4544 10944 10944
 mbcs carriers: 1 1 1
 mbcs sys_alloc carriers: 1
 mbcs carriers size: 32768 32768 32768
@@ -1534,8 +1534,8 @@ sbcs carriers: 0 0 0
 sbcs sys_alloc carriers: 0
 sbcs carriers size: 0 0 0
 sbcs sys_alloc carriers size: 0
-binary_alloc calls: 4019
-binary_free calls: 4017
+binary_alloc calls: 3749
+binary_free calls: 3742
 binary_realloc calls: 0
 sys_alloc calls: 1
 sys_free calls: 0
@@ -1554,8 +1554,8 @@ option smbcs: 262144
 option mbcgs: 10
 option acul: 60
 option as: aoffcbf
-mbcs blocks: 6 43 43
-mbcs blocks size: 7232 15488 15488
+mbcs blocks: 8 44 44
+mbcs blocks size: 8176 18224 18224
 mbcs carriers: 1 1 1
 mbcs sys_alloc carriers: 1
 mbcs carriers size: 32768 32768 32768
@@ -1570,8 +1570,8 @@ sbcs carriers: 0 0 0
 sbcs sys_alloc carriers: 0
 sbcs carriers size: 0 0 0
 sbcs sys_alloc carriers size: 0
-binary_alloc calls: 4601
-binary_free calls: 4595
+binary_alloc calls: 4143
+binary_free calls: 4135
 binary_realloc calls: 4
 sys_alloc calls: 1
 sys_free calls: 0
@@ -1622,11 +1622,11 @@ option smbcs: 262144
 option mbcgs: 10
 option acul: 60
 option as: aoffcbf
-mbcs blocks: 9 26 26
-mbcs blocks size: 2448 9552 9552
-mbcs carriers: 1 1 1
+mbcs blocks: 9 90 90
+mbcs blocks size: 2448 30960 30960
+mbcs carriers: 1 2 2
 mbcs sys_alloc carriers: 1
-mbcs carriers size: 32768 32768 32768
+mbcs carriers size: 32768 1081344 1081344
 mbcs sys_alloc carriers size: 32768
 mbcs_pool blocks: 0
 mbcs_pool blocks size: 0
@@ -1638,11 +1638,11 @@ sbcs carriers: 0 0 0
 sbcs sys_alloc carriers: 0
 sbcs carriers size: 0 0 0
 sbcs sys_alloc carriers size: 0
-driver_alloc calls: 513
-driver_free calls: 504
+driver_alloc calls: 342
+driver_free calls: 333
 driver_realloc calls: 0
-sys_alloc calls: 1
-sys_free calls: 0
+sys_alloc calls: 2
+sys_free calls: 1
 sys_realloc calls: 0
 =allocator:driver_alloc[2]
 versions: 0.9 3.0
@@ -1658,8 +1658,8 @@ option smbcs: 262144
 option mbcgs: 10
 option acul: 60
 option as: aoffcbf
-mbcs blocks: 14 22 22
-mbcs blocks size: 5712 10192 10192
+mbcs blocks: 3 42 42
+mbcs blocks size: 496 15216 15216
 mbcs carriers: 1 1 1
 mbcs sys_alloc carriers: 1
 mbcs carriers size: 32768 32768 32768
@@ -1674,8 +1674,8 @@ sbcs carriers: 0 0 0
 sbcs sys_alloc carriers: 0
 sbcs carriers size: 0 0 0
 sbcs sys_alloc carriers size: 0
-driver_alloc calls: 2237
-driver_free calls: 2223
+driver_alloc calls: 235
+driver_free calls: 232
 driver_realloc calls: 0
 sys_alloc calls: 1
 sys_free calls: 0
@@ -1694,8 +1694,8 @@ option smbcs: 262144
 option mbcgs: 10
 option acul: 60
 option as: aoffcbf
-mbcs blocks: 3 8 8
-mbcs blocks size: 496 4160 4160
+mbcs blocks: 3 17 17
+mbcs blocks size: 496 7552 7552
 mbcs carriers: 1 1 1
 mbcs sys_alloc carriers: 1
 mbcs carriers size: 32768 32768 32768
@@ -1710,8 +1710,8 @@ sbcs carriers: 0 0 0
 sbcs sys_alloc carriers: 0
 sbcs carriers size: 0 0 0
 sbcs sys_alloc carriers size: 0
-driver_alloc calls: 267
-driver_free calls: 264
+driver_alloc calls: 277
+driver_free calls: 274
 driver_realloc calls: 0
 sys_alloc calls: 1
 sys_free calls: 0
@@ -1730,11 +1730,11 @@ option smbcs: 262144
 option mbcgs: 10
 option acul: 60
 option as: aoffcbf
-mbcs blocks: 3 108 108
-mbcs blocks size: 496 46000 46000
-mbcs carriers: 1 2 2
+mbcs blocks: 14 25 25
+mbcs blocks size: 5712 10192 10192
+mbcs carriers: 1 1 1
 mbcs sys_alloc carriers: 1
-mbcs carriers size: 32768 1081344 1081344
+mbcs carriers size: 32768 32768 32768
 mbcs sys_alloc carriers size: 32768
 mbcs_pool blocks: 0
 mbcs_pool blocks size: 0
@@ -1746,11 +1746,11 @@ sbcs carriers: 0 0 0
 sbcs sys_alloc carriers: 0
 sbcs carriers size: 0 0 0
 sbcs sys_alloc carriers size: 0
-driver_alloc calls: 658
-driver_free calls: 655
+driver_alloc calls: 2298
+driver_free calls: 2284
 driver_realloc calls: 0
-sys_alloc calls: 2
-sys_free calls: 1
+sys_alloc calls: 1
+sys_free calls: 0
 sys_realloc calls: 0
 =allocator:test_alloc
 option e: false
@@ -1766,7 +1766,7 @@ State: Running
 Name: init
 Spawned as: otp_ring0:start/2
 Spawned by: []
-Started: Fri Sep 15 13:49:31 2017
+Started: Fri Sep 15 18:54:22 2017
 Message queue length: 0
 Number of heap fragments: 0
 Heap fragment data: 0
@@ -1777,7 +1777,7 @@ OldHeap: 610
 Heap unused: 420
 OldHeap unused: 459
 Memory: 13640
-Program counter: 0x000002a0395c2688 (init:boot_loop/2 + 48)
+Program counter: 0x0000017ec7942688 (init:boot_loop/2 + 48)
 CP: 0x0000000000000000 (invalid)
 Internal State: ACT_PRIO_NORMAL | USR_PRIO_NORMAL | PRQ_PRIO_NORMAL | ACTIVE | RUNNING | TRAP_EXIT | ON_HEAP_MSGQ
 =proc:<0.1.0>
@@ -1785,7 +1785,7 @@ State: Waiting
 Name: erts_code_purger
 Spawned as: erts_code_purger:start/0
 Spawned by: <0.0.0>
-Started: Fri Sep 15 13:49:31 2017
+Started: Fri Sep 15 18:54:22 2017
 Message queue length: 0
 Number of heap fragments: 0
 Heap fragment data: 0
@@ -1795,7 +1795,7 @@ OldHeap: 0
 Heap unused: 233
 OldHeap unused: 0
 Memory: 2608
-Program counter: 0x000002a0395b4c98 (erts_code_purger:loop/0 + 24)
+Program counter: 0x0000017ec7934c98 (erts_code_purger:loop/0 + 24)
 CP: 0x0000000000000000 (invalid)
 arity = 0
 Internal State: ACT_PRIO_NORMAL | USR_PRIO_NORMAL | PRQ_PRIO_NORMAL | TRAP_EXIT | ON_HEAP_MSGQ
@@ -1804,47 +1804,47 @@ State: Waiting
 Name: erl_prim_loader
 Spawned as: erlang:apply/2
 Spawned by: <0.3.0>
-Started: Fri Sep 15 13:49:31 2017
+Started: Fri Sep 15 18:54:22 2017
 Message queue length: 0
 Number of heap fragments: 0
 Heap fragment data: 0
 Link list: [<0.0.0>, #Port<0.0>]
-Reductions: 120194
+Reductions: 119371
 Stack+heap: 2586
-OldHeap: 2586
-Heap unused: 828
-OldHeap unused: 2086
-Memory: 42200
-Program counter: 0x000002a0397de820 (erl_prim_loader:loop/3 + 152)
+OldHeap: 10958
+Heap unused: 825
+OldHeap unused: 10558
+Memory: 109176
+Program counter: 0x0000017ec7b1e820 (erl_prim_loader:loop/3 + 152)
 CP: 0x0000000000000000 (invalid)
 arity = 0
 Internal State: ACT_PRIO_NORMAL | USR_PRIO_NORMAL | PRQ_PRIO_NORMAL | TRAP_EXIT | ON_HEAP_MSGQ
 =proc:<0.30.0>
-State: Scheduled
+State: Waiting
 Name: error_logger
 Spawned as: proc_lib:init_p/5
 Spawned by: <0.3.0>
-Started: Fri Sep 15 13:49:32 2017
+Started: Fri Sep 15 18:54:22 2017
 Message queue length: 1
 Number of heap fragments: 0
 Heap fragment data: 0
-Link list: [<0.0.0>]
-Reductions: 302
-Stack+heap: 610
+Link list: [<0.0.0>, {to,{code_server,'moo1@computer-48'},#Ref<0.0.2.1529>}]
+Reductions: 332
+Stack+heap: 987
 OldHeap: 376
-Heap unused: 69
-OldHeap unused: 364
-Memory: 8840
-Program counter: 0x000002a0375e64b8 (gen_event:fetch_msg/5 + 48)
+Heap unused: 519
+OldHeap unused: 358
+Memory: 11928
+Program counter: 0x0000017ec5bcf348 (code_server:call/1 + 216)
 CP: 0x0000000000000000 (invalid)
 arity = 0
-Internal State: ACT_PRIO_NORMAL | USR_PRIO_NORMAL | PRQ_PRIO_NORMAL | IN_PRQ_NORMAL | ACTIVE | IN_RUNQ | TRAP_EXIT | ON_HEAP_MSGQ
+Internal State: ACT_PRIO_NORMAL | USR_PRIO_NORMAL | PRQ_PRIO_NORMAL | TRAP_EXIT | ON_HEAP_MSGQ
 =proc:<0.31.0>
 State: Waiting
 Name: application_controller
 Spawned as: erlang:apply/2
 Spawned by: <0.3.0>
-Started: Fri Sep 15 13:49:32 2017
+Started: Fri Sep 15 18:54:22 2017
 Message queue length: 0
 Number of heap fragments: 0
 Heap fragment data: 0
@@ -1855,7 +1855,7 @@ OldHeap: 1598
 Heap unused: 1132
 OldHeap unused: 1580
 Memory: 26480
-Program counter: 0x000002a03768c520 (gen_server:loop/6 + 232)
+Program counter: 0x0000017ec5b5d270 (gen_server:loop/6 + 232)
 CP: 0x0000000000000000 (invalid)
 arity = 0
 Internal State: ACT_PRIO_NORMAL | USR_PRIO_NORMAL | PRQ_PRIO_NORMAL | TRAP_EXIT | ON_HEAP_MSGQ
@@ -1863,7 +1863,7 @@ Internal State: ACT_PRIO_NORMAL | USR_PRIO_NORMAL | PRQ_PRIO_NORMAL | TRAP_EXIT 
 State: Waiting
 Spawned as: proc_lib:init_p/5
 Spawned by: <0.32.0>
-Started: Fri Sep 15 13:49:32 2017
+Started: Fri Sep 15 18:54:22 2017
 Message queue length: 0
 Number of heap fragments: 0
 Heap fragment data: 0
@@ -1874,7 +1874,7 @@ OldHeap: 376
 Heap unused: 190
 OldHeap unused: 167
 Memory: 5784
-Program counter: 0x000002a03787fa50 (application_master:main_loop/2 + 48)
+Program counter: 0x0000017ec5b05820 (application_master:main_loop/2 + 48)
 CP: 0x0000000000000000 (invalid)
 arity = 0
 Internal State: ACT_PRIO_NORMAL | USR_PRIO_NORMAL | PRQ_PRIO_NORMAL | TRAP_EXIT | ON_HEAP_MSGQ
@@ -1882,7 +1882,7 @@ Internal State: ACT_PRIO_NORMAL | USR_PRIO_NORMAL | PRQ_PRIO_NORMAL | TRAP_EXIT 
 State: Waiting
 Spawned as: application_master:start_it/4
 Spawned by: <0.33.0>
-Started: Fri Sep 15 13:49:32 2017
+Started: Fri Sep 15 18:54:22 2017
 Message queue length: 0
 Number of heap fragments: 0
 Heap fragment data: 0
@@ -1893,7 +1893,7 @@ OldHeap: 0
 Heap unused: 96
 OldHeap unused: 0
 Memory: 2688
-Program counter: 0x000002a037881e68 (application_master:loop_it/4 + 48)
+Program counter: 0x0000017ec5b07c38 (application_master:loop_it/4 + 48)
 CP: 0x0000000000000000 (invalid)
 arity = 0
 Internal State: ACT_PRIO_NORMAL | USR_PRIO_NORMAL | PRQ_PRIO_NORMAL | TRAP_EXIT | ON_HEAP_MSGQ
@@ -1902,7 +1902,7 @@ State: Waiting
 Name: kernel_sup
 Spawned as: proc_lib:init_p/5
 Spawned by: <0.34.0>
-Started: Fri Sep 15 13:49:32 2017
+Started: Fri Sep 15 18:54:22 2017
 Message queue length: 0
 Number of heap fragments: 0
 Heap fragment data: 0
@@ -1913,36 +1913,36 @@ OldHeap: 376
 Heap unused: 542
 OldHeap unused: 186
 Memory: 12216
-Program counter: 0x000002a03768c520 (gen_server:loop/6 + 232)
+Program counter: 0x0000017ec5b5d270 (gen_server:loop/6 + 232)
 CP: 0x0000000000000000 (invalid)
 arity = 0
 Internal State: ACT_PRIO_NORMAL | USR_PRIO_NORMAL | PRQ_PRIO_NORMAL | TRAP_EXIT | ON_HEAP_MSGQ
 =proc:<0.36.0>
-State: Waiting
+State: Scheduled
 Name: code_server
 Spawned as: erlang:apply/2
 Spawned by: <0.35.0>
-Started: Fri Sep 15 13:49:32 2017
-Message queue length: 0
+Started: Fri Sep 15 18:54:22 2017
+Message queue length: 1
 Number of heap fragments: 0
-Heap fragment data: 7
-Link list: [<0.35.0>]
-Reductions: 75770
+Heap fragment data: 0
+Link list: [<0.35.0>, {from,<0.30.0>,#Ref<0.0.2.1529>}]
+Reductions: 75761
 Stack+heap: 6772
 OldHeap: 28690
-Heap unused: 2837
+Heap unused: 2848
 OldHeap unused: 22786
-Memory: 284536
-Program counter: 0x000002a0375d3b08 (code_server:loop/1 + 152)
+Memory: 284632
+Program counter: 0x0000017ec5bcf678 (code_server:loop/1 + 152)
 CP: 0x0000000000000000 (invalid)
 arity = 0
-Internal State: ACT_PRIO_NORMAL | USR_PRIO_NORMAL | PRQ_PRIO_NORMAL | TRAP_EXIT | ON_HEAP_MSGQ
+Internal State: ACT_PRIO_NORMAL | USR_PRIO_NORMAL | PRQ_PRIO_NORMAL | IN_PRQ_NORMAL | ACTIVE | IN_RUNQ | TRAP_EXIT | ON_HEAP_MSGQ
 =proc:<0.37.0>
 State: Waiting
 Name: rex
 Spawned as: proc_lib:init_p/5
 Spawned by: <0.35.0>
-Started: Fri Sep 15 13:49:32 2017
+Started: Fri Sep 15 18:54:22 2017
 Message queue length: 0
 Number of heap fragments: 0
 Heap fragment data: 0
@@ -1953,7 +1953,7 @@ OldHeap: 0
 Heap unused: 178
 OldHeap unused: 0
 Memory: 2736
-Program counter: 0x000002a03768c520 (gen_server:loop/6 + 232)
+Program counter: 0x0000017ec5b5d270 (gen_server:loop/6 + 232)
 CP: 0x0000000000000000 (invalid)
 arity = 0
 Internal State: ACT_PRIO_NORMAL | USR_PRIO_NORMAL | PRQ_PRIO_NORMAL | TRAP_EXIT | ON_HEAP_MSGQ
@@ -1962,7 +1962,7 @@ State: Waiting
 Name: global_name_server
 Spawned as: proc_lib:init_p/5
 Spawned by: <0.35.0>
-Started: Fri Sep 15 13:49:32 2017
+Started: Fri Sep 15 18:54:22 2017
 Message queue length: 0
 Number of heap fragments: 0
 Heap fragment data: 0
@@ -1973,7 +1973,7 @@ OldHeap: 0
 Heap unused: 121
 OldHeap unused: 0
 Memory: 2816
-Program counter: 0x000002a03768c520 (gen_server:loop/6 + 232)
+Program counter: 0x0000017ec5b5d270 (gen_server:loop/6 + 232)
 CP: 0x0000000000000000 (invalid)
 arity = 0
 Internal State: ACT_PRIO_NORMAL | USR_PRIO_NORMAL | PRQ_PRIO_NORMAL | TRAP_EXIT | ON_HEAP_MSGQ
@@ -1981,7 +1981,7 @@ Internal State: ACT_PRIO_NORMAL | USR_PRIO_NORMAL | PRQ_PRIO_NORMAL | TRAP_EXIT 
 State: Waiting
 Spawned as: erlang:apply/2
 Spawned by: <0.38.0>
-Started: Fri Sep 15 13:49:32 2017
+Started: Fri Sep 15 18:54:22 2017
 Message queue length: 0
 Number of heap fragments: 0
 Heap fragment data: 0
@@ -1992,7 +1992,7 @@ OldHeap: 0
 Heap unused: 165
 OldHeap unused: 0
 Memory: 2648
-Program counter: 0x000002a039d33be8 (global:loop_the_locker/1 + 808)
+Program counter: 0x0000017ec8455968 (global:loop_the_locker/1 + 808)
 CP: 0x0000000000000000 (invalid)
 arity = 0
 Internal State: ACT_PRIO_NORMAL | USR_PRIO_NORMAL | PRQ_PRIO_NORMAL | TRAP_EXIT | ON_HEAP_MSGQ
@@ -2000,7 +2000,7 @@ Internal State: ACT_PRIO_NORMAL | USR_PRIO_NORMAL | PRQ_PRIO_NORMAL | TRAP_EXIT 
 State: Waiting
 Spawned as: erlang:apply/2
 Spawned by: <0.38.0>
-Started: Fri Sep 15 13:49:32 2017
+Started: Fri Sep 15 18:54:22 2017
 Message queue length: 0
 Number of heap fragments: 0
 Heap fragment data: 0
@@ -2011,7 +2011,7 @@ OldHeap: 0
 Heap unused: 223
 OldHeap unused: 0
 Memory: 2648
-Program counter: 0x000002a039d3aaa0 (global:loop_the_registrar/0 + 24)
+Program counter: 0x0000017ec845c820 (global:loop_the_registrar/0 + 24)
 CP: 0x0000000000000000 (invalid)
 arity = 0
 Internal State: ACT_PRIO_NORMAL | USR_PRIO_NORMAL | PRQ_PRIO_NORMAL | ON_HEAP_MSGQ
@@ -2020,7 +2020,7 @@ State: Waiting
 Name: inet_db
 Spawned as: proc_lib:init_p/5
 Spawned by: <0.35.0>
-Started: Fri Sep 15 13:49:32 2017
+Started: Fri Sep 15 18:54:22 2017
 Message queue length: 0
 Number of heap fragments: 0
 Heap fragment data: 0
@@ -2031,7 +2031,7 @@ OldHeap: 0
 Heap unused: 29
 OldHeap unused: 0
 Memory: 2736
-Program counter: 0x000002a03768c520 (gen_server:loop/6 + 232)
+Program counter: 0x0000017ec5b5d270 (gen_server:loop/6 + 232)
 CP: 0x0000000000000000 (invalid)
 arity = 0
 Internal State: ACT_PRIO_NORMAL | USR_PRIO_NORMAL | PRQ_PRIO_NORMAL | TRAP_EXIT | ON_HEAP_MSGQ
@@ -2040,7 +2040,7 @@ State: Waiting
 Name: net_sup
 Spawned as: proc_lib:init_p/5
 Spawned by: <0.35.0>
-Started: Fri Sep 15 13:49:32 2017
+Started: Fri Sep 15 18:54:22 2017
 Message queue length: 0
 Number of heap fragments: 0
 Heap fragment data: 0
@@ -2051,7 +2051,7 @@ OldHeap: 987
 Heap unused: 124
 OldHeap unused: 711
 Memory: 13768
-Program counter: 0x000002a03768c520 (gen_server:loop/6 + 232)
+Program counter: 0x0000017ec5b5d270 (gen_server:loop/6 + 232)
 CP: 0x0000000000000000 (invalid)
 arity = 0
 Internal State: ACT_PRIO_NORMAL | USR_PRIO_NORMAL | PRQ_PRIO_NORMAL | TRAP_EXIT | ON_HEAP_MSGQ
@@ -2060,7 +2060,7 @@ State: Waiting
 Name: erl_epmd
 Spawned as: proc_lib:init_p/5
 Spawned by: <0.42.0>
-Started: Fri Sep 15 13:49:32 2017
+Started: Fri Sep 15 18:54:22 2017
 Message queue length: 0
 Number of heap fragments: 0
 Heap fragment data: 0
@@ -2071,7 +2071,7 @@ OldHeap: 0
 Heap unused: 29
 OldHeap unused: 0
 Memory: 2776
-Program counter: 0x000002a03768c520 (gen_server:loop/6 + 232)
+Program counter: 0x0000017ec5b5d270 (gen_server:loop/6 + 232)
 CP: 0x0000000000000000 (invalid)
 arity = 0
 Internal State: ACT_PRIO_NORMAL | USR_PRIO_NORMAL | PRQ_PRIO_NORMAL | ON_HEAP_MSGQ
@@ -2080,7 +2080,7 @@ State: Waiting
 Name: auth
 Spawned as: proc_lib:init_p/5
 Spawned by: <0.42.0>
-Started: Fri Sep 15 13:49:32 2017
+Started: Fri Sep 15 18:54:22 2017
 Message queue length: 0
 Number of heap fragments: 0
 Heap fragment data: 0
@@ -2091,7 +2091,7 @@ OldHeap: 610
 Heap unused: 32
 OldHeap unused: 533
 Memory: 8760
-Program counter: 0x000002a03768c520 (gen_server:loop/6 + 232)
+Program counter: 0x0000017ec5b5d270 (gen_server:loop/6 + 232)
 CP: 0x0000000000000000 (invalid)
 arity = 0
 Internal State: ACT_PRIO_NORMAL | USR_PRIO_NORMAL | PRQ_PRIO_NORMAL | TRAP_EXIT | ON_HEAP_MSGQ
@@ -2100,18 +2100,18 @@ State: Waiting
 Name: net_kernel
 Spawned as: proc_lib:init_p/5
 Spawned by: <0.42.0>
-Started: Fri Sep 15 13:49:32 2017
+Started: Fri Sep 15 18:54:22 2017
 Message queue length: 0
 Number of heap fragments: 0
 Heap fragment data: 0
 Link list: [#Port<0.388>, <0.46.0>, <0.47.0>, <0.42.0>]
-Reductions: 66122
-Stack+heap: 610
+Reductions: 46301
+Stack+heap: 2586
 OldHeap: 376
-Heap unused: 38
-OldHeap unused: 181
-Memory: 8880
-Program counter: 0x000002a03768c520 (gen_server:loop/6 + 232)
+Heap unused: 1434
+OldHeap unused: 139
+Memory: 24688
+Program counter: 0x0000017ec5b5d270 (gen_server:loop/6 + 232)
 CP: 0x0000000000000000 (invalid)
 arity = 0
 Internal State: ACT_PRIO_MAX | USR_PRIO_MAX | PRQ_PRIO_MAX | TRAP_EXIT | ON_HEAP_MSGQ
@@ -2119,18 +2119,18 @@ Internal State: ACT_PRIO_MAX | USR_PRIO_MAX | PRQ_PRIO_MAX | TRAP_EXIT | ON_HEAP
 State: Waiting
 Spawned as: inet_tcp_dist:accept_loop/3
 Spawned by: <0.45.0>
-Started: Fri Sep 15 13:49:32 2017
+Started: Fri Sep 15 18:54:22 2017
 Message queue length: 0
 Number of heap fragments: 0
 Heap fragment data: 0
-Link list: [<0.45.0>, {from,#Port<0.388>,#Ref<0.0.2.1555>}]
+Link list: [<0.45.0>, {from,#Port<0.388>,#Ref<0.0.4.2237>}]
 Reductions: 1179
 Stack+heap: 610
 OldHeap: 610
 Heap unused: 313
 OldHeap unused: 610
 Memory: 10616
-Program counter: 0x000002a0395db598 (prim_inet:accept0/2 + 216)
+Program counter: 0x0000017ec795b598 (prim_inet:accept0/2 + 216)
 CP: 0x0000000000000000 (invalid)
 arity = 0
 Internal State: ACT_PRIO_MAX | USR_PRIO_MAX | PRQ_PRIO_MAX | ON_HEAP_MSGQ
@@ -2138,18 +2138,18 @@ Internal State: ACT_PRIO_MAX | USR_PRIO_MAX | PRQ_PRIO_MAX | ON_HEAP_MSGQ
 State: Waiting
 Spawned as: net_kernel:ticker/2
 Spawned by: <0.45.0>
-Started: Fri Sep 15 13:49:32 2017
+Started: Fri Sep 15 18:54:22 2017
 Message queue length: 0
 Number of heap fragments: 0
 Heap fragment data: 0
 Link list: [<0.45.0>]
-Reductions: 45
+Reductions: 33
 Stack+heap: 233
 OldHeap: 0
 Heap unused: 229
 OldHeap unused: 0
 Memory: 2648
-Program counter: 0x000002a039d9ffc8 (net_kernel:ticker_loop/2 + 40)
+Program counter: 0x0000017ec84bd788 (net_kernel:ticker_loop/2 + 40)
 CP: 0x0000000000000000 (invalid)
 arity = 0
 Internal State: ACT_PRIO_MAX | USR_PRIO_MAX | PRQ_PRIO_MAX | ON_HEAP_MSGQ
@@ -2158,7 +2158,7 @@ State: Waiting
 Name: global_group
 Spawned as: proc_lib:init_p/5
 Spawned by: <0.35.0>
-Started: Fri Sep 15 13:49:32 2017
+Started: Fri Sep 15 18:54:22 2017
 Message queue length: 0
 Number of heap fragments: 0
 Heap fragment data: 0
@@ -2169,7 +2169,7 @@ OldHeap: 0
 Heap unused: 99
 OldHeap unused: 0
 Memory: 2736
-Program counter: 0x000002a03768c520 (gen_server:loop/6 + 232)
+Program counter: 0x0000017ec5b5d270 (gen_server:loop/6 + 232)
 CP: 0x0000000000000000 (invalid)
 arity = 0
 Internal State: ACT_PRIO_MAX | USR_PRIO_MAX | PRQ_PRIO_MAX | TRAP_EXIT | ON_HEAP_MSGQ
@@ -2178,7 +2178,7 @@ State: Waiting
 Name: file_server_2
 Spawned as: proc_lib:init_p/5
 Spawned by: <0.35.0>
-Started: Fri Sep 15 13:49:32 2017
+Started: Fri Sep 15 18:54:22 2017
 Message queue length: 0
 Number of heap fragments: 0
 Heap fragment data: 0
@@ -2189,7 +2189,7 @@ OldHeap: 376
 Heap unused: 223
 OldHeap unused: 362
 Memory: 5784
-Program counter: 0x000002a03768c520 (gen_server:loop/6 + 232)
+Program counter: 0x0000017ec5b5d270 (gen_server:loop/6 + 232)
 CP: 0x0000000000000000 (invalid)
 arity = 0
 Internal State: ACT_PRIO_NORMAL | USR_PRIO_NORMAL | PRQ_PRIO_NORMAL | TRAP_EXIT | ON_HEAP_MSGQ
@@ -2198,7 +2198,7 @@ State: Waiting
 Name: standard_error_sup
 Spawned as: proc_lib:init_p/5
 Spawned by: <0.35.0>
-Started: Fri Sep 15 13:49:32 2017
+Started: Fri Sep 15 18:54:22 2017
 Message queue length: 0
 Number of heap fragments: 0
 Heap fragment data: 0
@@ -2209,7 +2209,7 @@ OldHeap: 0
 Heap unused: 117
 OldHeap unused: 0
 Memory: 2776
-Program counter: 0x000002a03768c520 (gen_server:loop/6 + 232)
+Program counter: 0x0000017ec5b5d270 (gen_server:loop/6 + 232)
 CP: 0x0000000000000000 (invalid)
 arity = 0
 Internal State: ACT_PRIO_NORMAL | USR_PRIO_NORMAL | PRQ_PRIO_NORMAL | TRAP_EXIT | ON_HEAP_MSGQ
@@ -2218,7 +2218,7 @@ State: Waiting
 Name: standard_error
 Spawned as: erlang:apply/2
 Spawned by: <0.50.0>
-Started: Fri Sep 15 13:49:32 2017
+Started: Fri Sep 15 18:54:22 2017
 Message queue length: 0
 Number of heap fragments: 0
 Heap fragment data: 0
@@ -2229,34 +2229,35 @@ OldHeap: 0
 Heap unused: 215
 OldHeap unused: 0
 Memory: 2776
-Program counter: 0x000002a039dd9318 (standard_error:server_loop/1 + 40)
+Program counter: 0x0000017ec84f6ad8 (standard_error:server_loop/1 + 40)
 CP: 0x0000000000000000 (invalid)
 arity = 0
 Internal State: ACT_PRIO_NORMAL | USR_PRIO_NORMAL | PRQ_PRIO_NORMAL | TRAP_EXIT | ON_HEAP_MSGQ
 =proc:<0.52.0>
 State: Scheduled
 Spawned as: proc_lib:init_p/5
+Current call: supervisor_bridge:report_error/3
 Spawned by: <0.35.0>
-Started: Fri Sep 15 13:49:32 2017
-Message queue length: 1
+Started: Fri Sep 15 18:54:22 2017
+Message queue length: 0
 Number of heap fragments: 0
-Heap fragment data: 0
+Heap fragment data: 143
 Link list: [<0.35.0>]
-Reductions: 58
+Reductions: 63
 Stack+heap: 233
 OldHeap: 0
 Heap unused: 111
 OldHeap unused: 0
-Memory: 3960
-Program counter: 0x000002a03768c520 (gen_server:loop/6 + 232)
-CP: 0x0000000000000000 (invalid)
-arity = 0
+Memory: 3880
+Program counter: 0x0000017ec84e6450 (supervisor_bridge:report_error/3 + 8)
+CP: 0x0000017ec84e5fe8 (supervisor_bridge:handle_info/2 + 496)
+arity = 3
 Internal State: ACT_PRIO_NORMAL | USR_PRIO_NORMAL | PRQ_PRIO_NORMAL | IN_PRQ_NORMAL | ACTIVE | IN_RUNQ | TRAP_EXIT | ON_HEAP_MSGQ
 =proc:<0.54.0>
 State: Waiting
 Spawned as: proc_lib:init_p/5
 Spawned by: <0.35.0>
-Started: Fri Sep 15 13:49:32 2017
+Started: Fri Sep 15 18:54:22 2017
 Message queue length: 0
 Number of heap fragments: 0
 Heap fragment data: 0
@@ -2267,7 +2268,7 @@ OldHeap: 0
 Heap unused: 164
 OldHeap unused: 0
 Memory: 2736
-Program counter: 0x000002a03768c520 (gen_server:loop/6 + 232)
+Program counter: 0x0000017ec5b5d270 (gen_server:loop/6 + 232)
 CP: 0x0000000000000000 (invalid)
 arity = 0
 Internal State: ACT_PRIO_NORMAL | USR_PRIO_NORMAL | PRQ_PRIO_NORMAL | TRAP_EXIT | ON_HEAP_MSGQ
@@ -2276,7 +2277,7 @@ State: Waiting
 Name: kernel_safe_sup
 Spawned as: proc_lib:init_p/5
 Spawned by: <0.35.0>
-Started: Fri Sep 15 13:49:32 2017
+Started: Fri Sep 15 18:54:22 2017
 Message queue length: 0
 Number of heap fragments: 0
 Heap fragment data: 0
@@ -2287,7 +2288,7 @@ OldHeap: 376
 Heap unused: 333
 OldHeap unused: 325
 Memory: 6928
-Program counter: 0x000002a03768c520 (gen_server:loop/6 + 232)
+Program counter: 0x0000017ec5b5d270 (gen_server:loop/6 + 232)
 CP: 0x0000000000000000 (invalid)
 arity = 0
 Internal State: ACT_PRIO_NORMAL | USR_PRIO_NORMAL | PRQ_PRIO_NORMAL | TRAP_EXIT | ON_HEAP_MSGQ
@@ -2296,7 +2297,7 @@ State: Waiting
 Name: inet_gethost_native_sup
 Spawned as: proc_lib:init_p/5
 Spawned by: <0.55.0>
-Started: Fri Sep 15 13:50:47 2017
+Started: Fri Sep 15 18:55:10 2017
 Message queue length: 0
 Number of heap fragments: 0
 Heap fragment data: 0
@@ -2307,7 +2308,7 @@ OldHeap: 0
 Heap unused: 114
 OldHeap unused: 0
 Memory: 2776
-Program counter: 0x000002a03768c520 (gen_server:loop/6 + 232)
+Program counter: 0x0000017ec5b5d270 (gen_server:loop/6 + 232)
 CP: 0x0000000000000000 (invalid)
 arity = 0
 Internal State: ACT_PRIO_NORMAL | USR_PRIO_NORMAL | PRQ_PRIO_NORMAL | TRAP_EXIT | ON_HEAP_MSGQ
@@ -2316,7 +2317,7 @@ State: Waiting
 Name: inet_gethost_native
 Spawned as: inet_gethost_native:server_init/2
 Spawned by: <0.462.0>
-Started: Fri Sep 15 13:50:47 2017
+Started: Fri Sep 15 18:55:10 2017
 Message queue length: 0
 Number of heap fragments: 0
 Heap fragment data: 0
@@ -2327,7 +2328,7 @@ OldHeap: 610
 Heap unused: 530
 OldHeap unused: 601
 Memory: 10672
-Program counter: 0x000002a037600cd8 (inet_gethost_native:main_loop/1 + 40)
+Program counter: 0x0000017ec8b25758 (inet_gethost_native:main_loop/1 + 40)
 CP: 0x0000000000000000 (invalid)
 arity = 0
 Internal State: ACT_PRIO_NORMAL | USR_PRIO_NORMAL | PRQ_PRIO_NORMAL | TRAP_EXIT | ON_HEAP_MSGQ
@@ -2340,7 +2341,7 @@ Port controls linked-in driver: efile
 Slot: 3104
 Connected: <0.45.0>
 Links: <0.45.0>
-Monitors: (<0.46.0>,#Ref<0.0.2.1555>)
+Monitors: (<0.46.0>,#Ref<0.0.4.2237>)
 Port controls linked-in driver: tcp_inet
 =port:#Port<0.394>
 Slot: 3152
@@ -2386,9 +2387,9 @@ Table: 1
 Name: code
 Buckets: 256
 Chain Length Avg: 1.167969
-Chain Length Max: 6
+Chain Length Max: 4
 Chain Length Min: 0
-Chain Length Std Dev: 1.172233
+Chain Length Std Dev: 1.128081
 Chain Length Expected Std Dev: 1.078613
 Fixed: false
 Objects: 299
@@ -2706,12 +2707,12 @@ Write Concurrency: false
 Read Concurrency: false
 =timer:<0.41.0>
 Message: refresh_timeout
-Time left: 3274922
+Time left: 3363281
 =node:'moo1@computer-48'
-=not_connected:6941
+=not_connected:6944
 Name: 'graph@computer-48'
 =loaded_modules
-Current code: 3390822
+Current code: 3392142
 Old code: 0
 =mod:otp_ring0
 Current size: 1355
@@ -2752,4 +2753,23 @@ Current compilation info: 836C0000000368026400076F7074696F6E736C0000000668026400
 =mod:erlang
 Current size: 101881
 Current attributes: 836C00000002680264000376736E6C000000016E1000764903B9DC329D8BB3FA35F0331D87666A680264000A646570726563617465646C00000002680264000468617368610268026400036E6F7761006A6A
-Current compilation info: 836C0000000368026400076F7074696F6E736C0000000668026400066F75746469726B00252F686F6D652F646775642F7372632F6F74702F657274732F7072656C6F616465642F7372636802640001696B00212F686F6D652F646775642F7372632F6F74702F6C69622F6B65726E656C2F7372636802640001696B00252F686F6D652F646775642F7372632F6F
+Current compilation info: 836C0000000368026400076F7074696F6E736C0000000668026400066F75746469726B00252F686F6D652F646775642F7372632F6F74702F657274732F7072656C6F616465642F7372636802640001696B00212F686F6D652F646775642F7372632F6F74702F6C69622F6B65726E656C2F7372636802640001696B00252F686F6D652F646775642F7372632F6F74702F6C69622F6B65726E656C2F696E636C75646564000A64656275675F696E666F6400137761726E5F6F62736F6C6574655F677561726464000A64656275675F696E666F6A680264000776657273696F6E6B0005372E302E326802640006736F757263656B00302F686F6D652F646775642F7372632F6F74702F657274732F7072656C6F616465642F7372632F65726C616E672E65726C6A
+=mod:erts_internal
+Current size: 9631
+Current attributes: 836C00000001680264000376736E6C000000016E10000AB7B488E55C1BA0697B2F487B16E8A26A6A
+Current compilation info: 836C0000000368026400076F7074696F6E736C0000000668026400066F75746469726B00252F686F6D652F646775642F7372632F6F74702F657274732F7072656C6F616465642F7372636802640001696B00212F686F6D652F646775642F7372632F6F74702F6C69622F6B65726E656C2F7372636802640001696B00252F686F6D652F646775642F7372632F6F74702F6C69622F6B65726E656C2F696E636C75646564000A64656275675F696E666F6400137761726E5F6F62736F6C6574655F677561726464000A64656275675F696E666F6A680264000776657273696F6E6B0005372E302E326802640006736F757263656B00372F686F6D652F646775642F7372632F6F74702F657274732F7072656C6F616465642F7372632F657274735F696E7465726E616C2E65726C6A
+=mod:erl_tracer
+Current size: 1302
+Current attributes: 836C00000002680264000376736E6C000000016E10005F303637959DE38366589D528E9DD85F6A68026400086469616C797A65726C00000001680264000C6E6F5F636F6E7472616374736802640007656E61626C656461036A6A
+Current compilation info: 836C0000000368026400076F7074696F6E736C0000000668026400066F75746469726B00252F686F6D652F646775642F7372632F6F74702F657274732F7072656C6F616465642F7372636802640001696B00212F686F6D652F646775642F7372632F6F74702F6C69622F6B65726E656C2F7372636802640001696B00252F686F6D652F646775642F7372632F6F74702F6C69622F6B65726E656C2F696E636C75646564000A64656275675F696E666F6400137761726E5F6F62736F6C6574655F677561726464000A64656275675F696E666F6A680264000776657273696F6E6B0005372E302E326802640006736F757263656B00342F686F6D652F646775642F7372632F6F74702F657274732F7072656C6F616465642F7372632F65726C5F7472616365722E65726C6A
+=mod:erts_literal_area_collector
+Current size: 3967
+Current attributes: 836C00000001680264000376736E6C000000016E1000A5FB0C3BA4C4B0313FA4B9F1EBA4DC4A6A6A
+Current compilation info: 836C0000000368026400076F7074696F6E736C0000000668026400066F75746469726B00252F686F6D652F646775642F7372632F6F74702F657274732F7072656C6F616465642F7372636802640001696B00212F686F6D652F646775642F7372632F6F74702F6C69622F6B65726E656C2F7372636802640001696B00252F686F6D652F646775642F7372632F6F74702F6C69622F6B65726E656C2F696E636C75646564000A64656275675F696E666F6400137761726E5F6F62736F6C6574655F677561726464000A64656275675F696E666F6A680264000776657273696F6E6B0005372E302E326802640006736F757263656B00452F686F6D652F646775642F7372632F6F74702F657274732F7072656C6F616465642F7372632F657274735F6C69746572616C5F617265615F636F6C6C6563746F722E65726C6A
+=mod:erts_dirty_process_code_checker
+Current size: 2299
+Current attributes: 836C00000001680264000376736E6C000000016E10001F2AA0DB1233180517A0FC979B3027F56A6A
+Current compilation info: 836C0000000368026400076F7074696F6E736C0000000668026400066F75746469726B00252F686F6D652F646775642F7372632F6F74702F657274732F7072656C6F616465642F7372636802640001696B00212F686F6D652F646775642F7372632F6F74702F6C69622F6B65726E656C2F7372636802640001696B00252F686F6D652F646775642F7372632F6F74702F6C69622F6B65726E656C2F696E636C75646564000A64656275675F696E666F6400137761726E5F6F62736F6C6574655F677561726464000A64656275675F696E666F6A680264000776657273696F6E6B0005372E302E326802640006736F757263656B00492F686F6D652F646775642F7372632F6F74702F657274732F7072656C6F616465642F7372632F657274735F64697274795F70726F636573735F636F64655F636865636B65722E65726C6A
+=mod:erl_parse
+Current size: 249540
+Current attributes: 836C000000D0680264000376736E6C000000016E10005E1F15FA8DB96958A753630E5F193EF46A68026400086469616C797A65726C00000001680264000F6E6F7761726E5F66756E6374696F6E680264000979656363706172733261076A68026400086469616C797A65726C00000001680264000F6E6F7761726E5F66756E6374696F6E680264000B7965636370617273325F3061076A68026400086469616C797A65726C00000001680264000F6E6F7761726E5F66756E6374696F6E680264000B7965636370617273325F3361076A68026400086469616C797A65726C00000001680264000F6E6F7761726E5F66756E6374696F6E680264000B7965636370617273325F3461076A68026400086469616C797A65726C00000001680264000F6E6F7761726E5F66756E6374696F6E680264000B7965636370617273325F3561076A68026400086469616C797A65726C00000001680264000F6E6F7761726E5F66756E6374696F6E680264000B7965636370617273325F3661076A68026400086469616C797A65726C00000001680264000F6E6F7761726E5F66756E6374696F6E680264000B7965636370617273325F3761076A68026400086469616C797A65726C00000001680264000F6E6F7761726E5F66756E6374696F6E680264000C7965636370617273325F313061076A68026400086469616C797A65726C00000001680264000F6E6F7761726E5F66756E6374696F6E680264000C7965636370617273325F323361076A68026400086469616C797A65726C00000001680264000F6E6F7761726E5F66756E6374696F6E680264000C7965636370617273325F343061076A68026400086469616C797A65726C00000001680264000F6E6F7761726E5F66756E6374696F6E680264000C7965636370617273325F353461076A68026400086469616C797A65726C00000001680264000F6E6F7761726E5F66756E6374696F6E680264000C7965636370617273325F363361076A68026400086469616C797A65726C00000001680264000F6E6F7761726E5F66756E6374696F6E680264000C7965636370617273325F373261076A68026400086469616C797A65726C00000001680264000F6E6F7761726E5F66756E6374696F6E680264000C7965636370617273325F373761076A68026400086469616C797A65726C00000001680264000F6E6F7761726E5F66756E6374696F6E680264000C7965636370617273325F383661076A68026400086469616C797A65726C00000001680264000F6E6F7761726E5F66756E6374696F6E680264000D7965636370617273325F31303561076A68026400086469616C797A65726C00000001680264000F6E6F7761726E5F66756E6374696F6E680264000D7965636370617273325F31303761076A68026400086469616C797A65726C00000001680264000F6E6F7761726E5F66756E6374696F6E680264000D7965636370617273325F31313061076A68026400086469616C797A65726C00000001680264000F6E6F7761726E5F66756E6374696F6E680264000D7965636370617273325F31313361076A68026400086469616C797A65726C00000001680264000F6E6F7761726E5F66756E6374696F6E680264000D7965636370617273325F31313861076A68026400086469616C797A65726C00000001680264000F6E6F7761726E5F66756E6374696F6E680264000D7965636370617273325F31323061076A68026400086469616C797A65726C00000001680264000F6E6F7761726E5F66756E6374696F6E680264000D7965636370617273325F31323761076A68026400086469616C797A65726C00000001680264000F6E6F7761726E5F66756E6374696F6E680264000D7965636370617273325F31323961076A68026400086469616C797A65726C00000001680264000F6E6F7761726E5F66756E6374696F6E680264000D7965636370617273325F31333661076A68026400086469616C797A65726C00000001680264000F6E6F7761726E5F66756E6374696F6E680264000D7965636370617273325F31343061076A68026400086469616C797A65726C00000001680264000F6E6F7761726E5F66756E6374696F6E680264000D7965636370617273325F31343161076A68026400086469616C797A65726C00000001680264000F6E6F7761726E5F66756E6374696F6E680264000D7965636370617273325F31343461076A68026400086469616C797A65726C00000001680264000F6E6F7761726E5F66756E6374696F6E680264000D7965636370617273325F31343861076A68026400086469616C797A65726C00000001680264000F6E6F7761726E5F66756E6374696F6E680264000D7965636370617273325F31353361076A68026400086469616C797A65726C00000001680264000F6E6F7761726E5F66756E6374696F6E680264000D7965636370617273325F31353561076A68026400086469616C797A65726C00000001680264000F6E6F7761726E5F66756E6374696F6E680264000D7965636370617273325F31353761076A68026400086469616C797A65726C00000001680264000F6E6F7761726E5F66756E6374696F6E680264000D7965636370617273325F31363661076A68026400086469616C797A65726C00000001680264000F6E6F7761726E5F66756E6374696F6E680264000D7965636370617273325F31373761076A68026400086469616C797A65726C00000001680264000F6E6F7761726E5F66756E6374696F6E680264000D7965636370617273325F31373961076A68026400086469616C797A65726C00000001680264000F6E6F7761726E5F66756E6374696F6E680264000D7965636370617273325F31383461076A68026400086469616C797A65726C00000001680264000F6E6F7761726E5F66756E6374696F6E680264000D7965636370617273325F31393661076A68026400086469616C797A65726C00000001680264000F6E6F7761726E5F66756E6374696F6E680264000D7965636370617273325F32303061076A68026400086469616C797A65726C00000001680264000F6E6F7761726E5F66756E6374696F6E680264000D7965636370617273325F32303561076A68026400086469616C797A65726C00000001680264000F6E6F7761726E5F66756E6374696F6E680264000D7965636370617273325F32303861076A68026400086469616C797A65726C00000001680264000F6E6F7761726E5F66756E6374696F6E680264000D7965636370617273325F32313161076A68026400086469616C797A65726C00000001680264000F6E6F7761726E5F66756E6374696F6E680264000D7965636370617273325F32313361076A68026400086469616C797A65726C00000001680264000F6E6F7761726E5F66756E6374696F6E680264000D7965636370617273325F32313461076A68026400086469616C797A65726C00000001680264000F6E6F7761726E5F66756E6374696F6E680264000D7965636370617273325F32323861076A68026400086469616C797A65726C00000001680264000F6E6F7761726E5F66756E6374696F6E680264000D7965636370617273325F32333061076A68026400086469616C797A65726C00000001680264000F6E6F7761726E5F66756E6374696F6E680264000D7965636370617273325F32333261076A68026400086469616C797A65726C00000001680264000F6E6F7761726E5F66756E6374696F6E680264000D7965636370617273325F32333361076A68026400086469616C797A65726C00000001680264000F6E6F7761726E5F66756E6374696F6E680264000D7965636370617273325F32333961076A68026400086469616C797A65726C00000001680264000F6E6F7761726E5F66756E6374696F6E680264000D7965636370617273325F32383661076A68026400086469616C797A65726C00000001680264000F6E6F7761726E5F66756E6374696F6E680264000D7965636370617273325F32393061076A68026400086469616C797A65726C00000001680264000F6E6F7761726E5F66756E6374696F6E680264000D7965636370617273325F32393261076A68026400086469616C797A65726C00000001680264000F6E6F7761726E5F66756E6374696F6E680264000D7965636370617273325F32393561076A68026400086469616C797A65726C00000001680264000F6E6F7761726E5F66756E6374696F6E680264000D7965636370617273325F32393961076A68026400086469616C797A65726C00000001680264000F6E6F7761726E5F66756E6374696F6E680264000D7965636370617273325F33303061076A68026400086469616C797A65726C00000001680264000F6E6F7761726E5F66756E6374696F6E680264000D7965636370617273325F33303161076A68026400086469616C797A65726C00000001680264000F6E6F7761726E5F66756E6374696F6E680264000D7965636370617273325F33303261076A68026400086469616C797A65726C00000001680264000F6E6F7761726E5F66756E6374696F6E680264000D7965636370617273325F33303461076A68026400086469616C797A65726C00000001680264000F6E6F7761726E5F66756E6374696F6E680264000D7965636370617273325F33303961076A68026400086469616C797A65726C00000001680264000F6E6F7761726E5F66756E6374696F6E680264000D7965636370617273325F33313261076A68026400086469616C797A65726C00000001680264000F6E6F7761726E5F66756E6374696F6E680264000D7965636370617273325F33313361076A68026400086469616C797A65726C00000001680264000F6E6F7761726E5F66756E6374696F6E680264000D7965636370617273325F33313561076A68026400086469616C797A65726C00000001680264000F6E6F7761726E5F66756E6374696F6E680264000D7965636370617273325F33313861076A68026400086469616C797A65726C00000001680264000F6E6F7761726E5F66756E6374696F6E680264000D7965636370617273325F33323161076A68026400086469616C797A65726C00000001680264000F6E6F7761726E5F66756E6374696F6E680264000D7965636370617273325F33323761076A68026400086469616C797A65726C00000001680264000F6E6F7761726E5F66756E6374696F6E680264000D7965636370617273325F33333261076A68026400086469616C797A65726C00000001680264000F6E6F7761726E5F66756E6374696F6E680264000D7965636370617273325F33333461076A68026400086469616C797A65726C00000001680264000F6E6F7761726E5F66756E6374696F6E680264000D7965636370617273325F33333561076A68026400086469616C797A65726C00000001680264000F6E6F7761726E5F66756E6374696F6E680264000D7965636370617273325F33333861076A68026400086469616C797A65726C00000001680264000F6E6F7761726E5F66756E6374696F6E680264000D7965636370617273325F33343261076A68026400086469616C797A65726C00000001680264000F6E6F7761726E5F66756E6374696F6E680264000D7965636370617273325F33343861076A68026400086469616C797A65726C00000001680264000F6E6F7761726E5F66756E6374696F6E680264000D7965636370617273325F33343961076A68026400086469616C797A65726C00000001680264000F6E6F7761726E5F66756E6374696F6E680264000D7965636370617273325F33353361076A68026400086469616C797A65726C00000001680264000F6E6F7761726E5F66756E6374696F6E680264000D7965636370617273325F33353461076A68026400086469616C797A65726C00000001680264000F6E6F7761726E5F66756E6374696F6E680264000D7965636370617273325F33353961076A68026400086469616C797A65726C00000001680264000F6E6F7761726E5F66756E6374696F6E680264000D7965636370617273325F33363061076A68026400086469616C797A65726C00000001680264000F6E6F7761726E5F66756E6374696F6E680264000D7965636370617273325F33363261076A68026400086469616C797A65726C00000001680264000F6E6F7761726E5F66756E6374696F6E680264000D7965636370617273325F33363561076A68026400086469616C797A65726C00000001680264000F6E6F7761726E5F66756E6374696F6E680264000D7965636370617273325F33363861076A68026400086469616C797A65726C00000001680264000F6E6F7761726E5F66756E6374696F6E680264000D7965636370617273325F33373061076A68026400086469616C797A65726C00000001680264000F6E6F7761726E5F66756E6374696F6E680264000D7965636370617273325F33373261076A68026400086469616C797A65726C00000001680264000F6E6F7761726E5F66756E6374696F6E680264000D7965636370617273325F33373461076A68026400086469616C797A65726C00000001680264000F6E6F7761726E5F66756E6374696F6E680264000D7965636370617273325F33373561076A68026400086469616C797A65726C00000001680264000F6E6F7761726E5F66756E6374696F6E680264000D7965636370617273325F33373761076A68026400086469616C797A65726C00000001680264000F6E6F7761726E5F66756E6374696F6E680264000D7965636370617273325F33383361076A68026400086469616C797A65726C00000001680264000F6E6F7761726E5F66756E6374696F6E680264000D7965636370617273325F33383561076A68026400086469616C797A65726C00000001680264000F6E6F7761726E5F66756E6374696F6E680264000D7965636370617273325F33383661076A68026400086469616C797A65726C00000001680264000F6E6F7761726E5F66756E6374696F6E680264000D7965636370617273325F33383761076A68026400086469616C797A65726C00000001680264000F6E6F7761726E5F66756E6374696F6E680264000D7965636370617273325F33383861076A68026400086469616C797A65726C00000001680264000F6E6F7761726E5F66756E6374696F6E680264000D7965636370617273325F33393361076A68026400086469616C797A65726C00000001680264000F6E6F7761726E5F66756E6374696F6E680264000D7965636370617273325F33393561076A68026400086469616C797A65726C00000001680264000F6E6F7761726E5F66756E6374696F6E680264000D7965636370617273325F33393761076A68026400086469616C797A65726C00000001680264000F6E6F7761726E5F66756E6374696F6E680264000D7965636370617273325F33393861076A68026400086469616C797A65726C00000001680264000F6E6F7761726E5F66756E6374696F6E680264000D7965636370617273325F34303861076A68026400086469616C797A65726C00000001680264000F6E6F7761726E5F66756E6374696F6E680264000D7965636370617273325F34303961076A68026400086469616C797A65726C00000001680264000F6E6F7761726E5F66756E6374696F6E680264000D7965636370617273325F34313161076A68026400086469616C797A65726C00000001680264000F6E6F7761726E5F66756E6374696F6E680264000D7965636370617273325F34313561076A68026400086469616C797A65726C00000001680264000F6E6F7761726E5F66756E6374696F6E680264000D7965636370617273325F34323161076A68026400086469616C797A65726C00000001680264000F6E6F7761726E5F66756E6374696F6E680264000D7965636370617273325F34333261076A68026400086469616C797A65726C00000001680264000F6E6F7761726E5F66756E6374696F6E680264000D7965636370617273325F34333561076A68026400086469616C797A65726C00000001680264000F6E6F7761726E5F66756E6374696F6E680264000D7965636370617273325F34333661076A68026400086469616C797A65726C00000001680264000F6E6F7761726E5F66756E6374696F6E680264000D7965636370617273325F34343061076A68026400086469616C797A65726C00000001680264000F6E6F7761726E5F66756E6374696F6E680264000D7965636370617273325F34353361076A68026400086469616C797A65726C00000001680264000F6E6F7761726E5F66756E6374696F6E680264000D7965636370617273325F34353461076A68026400086469616C797A65726C00000001680264000F6E6F7761726E5F66756E6374696F6E680264000D7965636370617273325F34353961076A68026400086469616C797A65726C00000001680264000F6E6F7761726E5F66756E6374696F6E680264000D7965636370617273325F34363161076A68026400086469616C797A65726C00000001680264000F6E6F7761726E5F66756E6374696F6E680264000D7965636370617273325F34373861076A68026400086469616C797A65726C00000001680264000F6E6F7761726E5F66756E6374696F6E680264000F79656363676F746F5F6164645F6F7061076A68026400086469616C797A65726C00000001680264000F6E6F7761726E5F66756E6374696F6E680264001679656363676F746F5F617267756D656E745F6C69737461076A68026400086469616C797A65726C00000001680264000F6E6F7761726E5F66756E6374696F6E680264001479656363676F746F5F61746F6D5F6F725F76617261076A68026400086469616C797A65726C00000001680264000F6E6F7761726E5F66756E6374696F6E68

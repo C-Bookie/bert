@@ -3,18 +3,19 @@
 -compile(export_all).
 
 pulse(N, I) ->
-	io:fwrite("~p "++printBlock(getData(N, []), 0, []), [I]),
+  io:fwrite("~p "++printBlock(getData(N, [], getI), 0, []), [I]),
+  io:fwrite("~p "++printBlock(getData(N, [], getC), 0, []), [I]),
 %  io:format("~p~n", [getData(N, [])]),
   timer:sleep(1000),
 	pulse(N, I+1).
 
-getData([], R) ->
+getData([], R, _M) ->
   R;
-getData([N|Ns], R) ->
-  N!{get, self()},
+getData([N|Ns], R, M) ->
+  N!{M, self()},
   receive
     X ->
-      getData(Ns, [X|R])
+      getData(Ns, [X|R], M)
   end.
 
 printLine(_, [], R, S) ->

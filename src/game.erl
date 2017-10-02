@@ -44,10 +44,10 @@ lp() ->
 
 graph(N) ->
   receive
-    {get, P} ->
-      P!{ok, [-1|paint:getData(N, [])]},
-%      P!8,
-      io:fwrite("beep~n");
+    {getI, P} ->
+      P!{ok, [-1|paint:getData(N, [], getI)]};
+    {getC, P} ->
+      P!{ok, [-1|paint:getData(N, [], getC)]};
     X ->
       io:fwrite(X)
   end,

@@ -38,10 +38,12 @@ public class Main {
 	
 	private static final int GRAPH_SIZE = 256;
 	private int[] graph;
+	private int[] graph2;
 	private int step = 0;
 	
 	public Main() {
 		graph = new int[GRAPH_SIZE];
+		graph2 = new int[GRAPH_SIZE];
 		try {
 
 //			self = new OtpSelf(NAME);    //if no connection to the name server, run 'erl -sname <anything>' in a terminal
@@ -73,7 +75,7 @@ public class Main {
 		System.out.println("Constructed:" + NAME);
 	}
 	
-	public int coms() {
+	public int coms(String req) {
 		try {
 			if (self.ping(SERVER, 1000)) {
 //				if (self.ping(CLIENT, 1000)) {
@@ -82,7 +84,7 @@ public class Main {
 						mbox.link(self.createPid());
 					
 					OtpErlangObject[] msg = new OtpErlangObject[2];
-					msg[0] = new OtpErlangAtom("get");
+					msg[0] = new OtpErlangAtom(req);
 					msg[1] = mbox.self();
 					OtpErlangTuple tuple = new OtpErlangTuple(msg);
 					
@@ -91,7 +93,7 @@ public class Main {
 				
 				OtpErlangTuple o = (OtpErlangTuple) mbox.receive();
 				OtpErlangList o2 = (OtpErlangList)o.elementAt(1);
-					System.out.println(Integer.toString(step) + ": " + o2.toString());
+//					System.out.println(Integer.toString(step) + ": " + o2.toString());
 					return getSum(o2);
 //				}
 //				else
@@ -203,24 +205,34 @@ public class Main {
 	
 	private void test() {
 		
-		int a = coms();
-		System.out.println(a);
-		graph[step] = coms();
-		
-		GL11.glColor3f(0.0f, 1.0f, 0.2f);
+		graph[step] = coms("getI");
+		graph2[step] = coms("getC");
 		
 		final float xMin = -0.9f;
 		final float xMax = 0.9f;
 		final float yMin = -0.9f;
 		final float yMax = 0.9f;
 		
+		GL11.glColor3f(0.0f, 1.0f, 0.2f);
+		
 		for(int i=0; i<GRAPH_SIZE-1; i++)
 			drawLine(
 					map(xMin, xMax, (float)i/GRAPH_SIZE),
-					map(yMin, yMax, graph[(step+i+1)%GRAPH_SIZE]/10000.f),
+					map(yMin, yMax, graph[(step+i+1)%GRAPH_SIZE]/100.f),
 					map(xMin, xMax, (float)(i+1)/GRAPH_SIZE),
-					map(yMin, yMax, graph[(step+i+2)%GRAPH_SIZE]/10000.f)
+					map(yMin, yMax, graph[(step+i+2)%GRAPH_SIZE]/100.f)
 			);
+		
+		GL11.glColor3f(0.2f, 0.0f, 1.2f);
+
+		for(int i=0; i<GRAPH_SIZE-1; i++)
+			drawLine(
+					map(xMin, xMax, (float)i/GRAPH_SIZE),
+					map(yMin, yMax, graph2[(step+i+1)%GRAPH_SIZE]/10000.f),
+					map(xMin, xMax, (float)(i+1)/GRAPH_SIZE),
+					map(yMin, yMax, graph2[(step+i+2)%GRAPH_SIZE]/10000.f)
+			);
+		
 		
 		step = (step+1)%GRAPH_SIZE;
 	}
