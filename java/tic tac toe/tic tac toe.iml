@@ -8,5 +8,6 @@
     <orderEntry type="jdk" jdkName="1.8" jdkType="JavaSDK" />
     <orderEntry type="sourceFolder" forTests="false" />
     <orderEntry type="library" name="OtpErlang" level="project" />
+    <orderEntry type="library" name="pi4j" level="project" />
   </component>
 </module>

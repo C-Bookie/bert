@@ -29,6 +29,7 @@
       <root url="file://$PROJECT_DIR$/java/tic tac toe/lib/lwjgl-3.1.2/lwjgl-vulkan" />
       <root url="file://$PROJECT_DIR$/java/tic tac toe/lib/lwjgl-3.1.2/lwjgl-xxhash" />
       <root url="file://$PROJECT_DIR$/java/tic tac toe/lib/lwjgl-3.1.2/lwjgl-yoga" />
+      <root url="file://$PROJECT_DIR$/java/tic tac toe/lib/pi4j-1.1/lib" />
     </CLASSES>
     <JAVADOC />
     <SOURCES>
@@ -59,6 +60,7 @@
       <root url="file://$PROJECT_DIR$/java/tic tac toe/lib/lwjgl-3.1.2/lwjgl-vulkan" />
       <root url="file://$PROJECT_DIR$/java/tic tac toe/lib/lwjgl-3.1.2/lwjgl-xxhash" />
       <root url="file://$PROJECT_DIR$/java/tic tac toe/lib/lwjgl-3.1.2/lwjgl-yoga" />
+      <root url="file://$PROJECT_DIR$/java/tic tac toe/lib/pi4j-1.1/lib" />
     </SOURCES>
     <jarDirectory url="file://$PROJECT_DIR$/java/tic tac toe/lib/lwjgl-3.1.2/lwjgl" recursive="false" />
     <jarDirectory url="file://$PROJECT_DIR$/java/tic tac toe/lib/lwjgl-3.1.2/lwjgl" recursive="false" />
@@ -87,6 +89,7 @@
     <jarDirectory url="file://$PROJECT_DIR$/java/tic tac toe/lib/lwjgl-3.1.2/lwjgl-vulkan" recursive="false" />
     <jarDirectory url="file://$PROJECT_DIR$/java/tic tac toe/lib/lwjgl-3.1.2/lwjgl-xxhash" recursive="false" />
     <jarDirectory url="file://$PROJECT_DIR$/java/tic tac toe/lib/lwjgl-3.1.2/lwjgl-yoga" recursive="false" />
+    <jarDirectory url="file://$PROJECT_DIR$/java/tic tac toe/lib/pi4j-1.1/lib" recursive="false" />
     <jarDirectory url="file://$PROJECT_DIR$/java/tic tac toe/lib/lwjgl-3.1.2/lwjgl" recursive="false" type="SOURCES" />
     <jarDirectory url="file://$PROJECT_DIR$/java/tic tac toe/lib/lwjgl-3.1.2/lwjgl" recursive="false" type="SOURCES" />
     <jarDirectory url="file://$PROJECT_DIR$/java/tic tac toe/lib/lwjgl-3.1.2/lwjgl" recursive="false" type="SOURCES" />
@@ -114,5 +117,6 @@
     <jarDirectory url="file://$PROJECT_DIR$/java/tic tac toe/lib/lwjgl-3.1.2/lwjgl-vulkan" recursive="false" type="SOURCES" />
     <jarDirectory url="file://$PROJECT_DIR$/java/tic tac toe/lib/lwjgl-3.1.2/lwjgl-xxhash" recursive="false" type="SOURCES" />
     <jarDirectory url="file://$PROJECT_DIR$/java/tic tac toe/lib/lwjgl-3.1.2/lwjgl-yoga" recursive="false" type="SOURCES" />
+    <jarDirectory url="file://$PROJECT_DIR$/java/tic tac toe/lib/pi4j-1.1/lib" recursive="false" type="SOURCES" />
   </library>
 </component>
