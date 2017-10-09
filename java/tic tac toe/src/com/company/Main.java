@@ -13,10 +13,13 @@ public class Main {
 		Pi pi = new Pi();
 
 		try {
+			System.out.println("Begin");
 			pi.foo();
 		} catch (IOException e) {
+			System.out.println("Error");
 			e.printStackTrace();
 		}
+		System.out.println("End");
 
 	}
 	
