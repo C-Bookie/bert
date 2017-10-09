@@ -7,7 +7,8 @@
     </content>
     <orderEntry type="jdk" jdkName="1.8" jdkType="JavaSDK" />
     <orderEntry type="sourceFolder" forTests="false" />
-    <orderEntry type="library" name="OtpErlang" level="project" />
+    <orderEntry type="library" name="lwjgl" level="project" />
     <orderEntry type="library" name="pi4j" level="project" />
+    <orderEntry type="library" name="OtpErlang" level="project" />
   </component>
 </module>

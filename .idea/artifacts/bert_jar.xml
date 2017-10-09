@@ -140,7 +140,7 @@
       <element id="extracted-dir" path="$PROJECT_DIR$/java/tic tac toe/lib/lwjgl-3.1.2/lwjgl-yoga/lwjgl-yoga-natives-linux.jar" path-in-jar="/" />
       <element id="extracted-dir" path="$PROJECT_DIR$/java/tic tac toe/lib/lwjgl-3.1.2/lwjgl-yoga/lwjgl-yoga-natives-macos.jar" path-in-jar="/" />
       <element id="extracted-dir" path="$PROJECT_DIR$/java/tic tac toe/lib/lwjgl-3.1.2/lwjgl-yoga/lwjgl-yoga-natives-windows.jar" path-in-jar="/" />
-      <element id="library" level="project" name="OtpErlang" />
+      <element id="library" level="project" name="lwjgl" />
     </root>
   </artifact>
 </component>

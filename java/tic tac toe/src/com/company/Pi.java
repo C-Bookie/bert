@@ -1,5 +1,6 @@
 package com.company;
 
+import com.pi4j.io.gpio.GpioController;
 import com.pi4j.io.gpio.GpioFactory;
 import com.pi4j.io.gpio.RaspiPin;
 import com.pi4j.io.spi.SpiChannel;
@@ -19,8 +20,10 @@ public class Pi {
 	public void foo()  throws IOException {
 		System.out.println("boo ya");
 
-		Display disp = new Display(128, 64, GpioFactory.getInstance(),
-				SpiFactory.getInstance(SpiChannel.CS1, 8000000), RaspiPin.GPIO_03, RaspiPin.GPIO_04);
+		GpioController gpio = GpioFactory.getInstance();
+
+//		Display disp = new Display(128, 64, GpioFactory.getInstance(), SpiFactory.getInstance(SpiChannel.CS1, 8000000), RaspiPin.GPIO_03, RaspiPin.GPIO_04);
+		Display disp = new Display(128, 64, gpio, SpiFactory.getInstance(SpiChannel.CS1, 8000000), RaspiPin.GPIO_03, RaspiPin.GPIO_04);
 
 		disp.begin();
 
