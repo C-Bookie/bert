@@ -10,8 +10,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="33dc5883-d4de-411c-8c89-f044e294ef6f" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/artifacts/bert_jar.xml" afterPath="$PROJECT_DIR$/.idea/artifacts/bert_jar.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/java/tic tac toe/out/artifacts/bert.jar" afterPath="$PROJECT_DIR$/java/tic tac toe/out/artifacts/bert.jar" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/java/tic tac toe/src/com/company/Main.java" afterPath="$PROJECT_DIR$/java/tic tac toe/src/com/company/Main.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/java/tic tac toe/tic tac toe.iml" afterPath="$PROJECT_DIR$/java/tic tac toe/tic tac toe.iml" />
     </list>
     <ignored path="intelij.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -92,7 +94,24 @@
             <state relative-caret-position="476">
               <caret line="42" column="56" selection-start-line="42" selection-start-column="42" selection-end-line="42" selection-end-column="56" />
               <folding>
-                <element signature="imports" expanded="true" />
+                <element signature="e#8209#8210#0" expanded="false" />
+                <element signature="e#8267#8268#0" expanded="false" />
+                <element signature="e#9622#9623#0" expanded="false" />
+                <element signature="e#9685#9686#0" expanded="false" />
+                <element signature="e#11771#11772#0" expanded="false" />
+                <element signature="e#11836#11837#0" expanded="false" />
+                <element signature="e#11910#11911#0" expanded="false" />
+                <element signature="e#11943#11944#0" expanded="false" />
+                <element signature="e#12019#12020#0" expanded="false" />
+                <element signature="e#12053#12054#0" expanded="false" />
+                <element signature="e#13180#13181#0" expanded="false" />
+                <element signature="e#13216#13217#0" expanded="false" />
+                <element signature="e#13398#13399#0" expanded="false" />
+                <element signature="e#13443#13444#0" expanded="false" />
+                <element signature="e#14064#14065#0" expanded="false" />
+                <element signature="e#14095#14096#0" expanded="false" />
+                <element signature="e#14333#14334#0" expanded="false" />
+                <element signature="e#14369#14370#0" expanded="false" />
               </folding>
             </state>
           </provider>
@@ -104,7 +123,8 @@
             <state relative-caret-position="459">
               <caret line="43" column="16" selection-start-line="43" selection-start-column="16" selection-end-line="43" selection-end-column="16" />
               <folding>
-                <element signature="imports" expanded="true" />
+                <element signature="e#6472#6473#0" expanded="false" />
+                <element signature="e#6510#6511#0" expanded="false" />
               </folding>
             </state>
           </provider>
@@ -179,8 +199,8 @@
         <option value="$PROJECT_DIR$/java/tic tac toe/src/com/company/pi.java" />
         <option value="$PROJECT_DIR$/java/tic tac toe/src/com/company/Graph.java" />
         <option value="$PROJECT_DIR$/java/tic tac toe/src/com/company/Display.java" />
-        <option value="$PROJECT_DIR$/java/tic tac toe/src/com/company/Main.java" />
         <option value="$PROJECT_DIR$/java/tic tac toe/src/com/company/Pi.java" />
+        <option value="$PROJECT_DIR$/java/tic tac toe/src/com/company/Main.java" />
       </list>
     </option>
   </component>
@@ -196,6 +216,9 @@
         <option name="mavenHome" value="Bundled (Maven 3)" />
       </MavenGeneralSettings>
     </option>
+  </component>
+  <component name="MavenProjectNavigator">
+    <treeState />
   </component>
   <component name="ProjectFrameBounds">
     <option name="x" value="-1288" />
@@ -348,7 +371,7 @@
   <component name="PropertiesComponent">
     <property name="settings.editor.selected.configurable" value="preferences.keymap" />
     <property name="settings.editor.splitter.proportion" value="0.2" />
-    <property name="project.structure.last.edited" value="Artifacts" />
+    <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="aspect.path.notification.shown" value="true" />
@@ -974,7 +997,7 @@
       <workItem from="1506960384913" duration="3406000" />
       <workItem from="1507500539137" duration="3353000" />
       <workItem from="1507554248605" duration="10907000" />
-      <workItem from="1507635737529" duration="357000" />
+      <workItem from="1507635737529" duration="1029000" />
     </task>
     <task id="LOCAL-00001" summary="made a lite version to run on the pi zero">
       <created>1493958783686</created>
@@ -1116,11 +1139,18 @@
       <option name="project" value="LOCAL" />
       <updated>1507563529657</updated>
     </task>
-    <option name="localTasksCounter" value="21" />
+    <task id="LOCAL-00021" summary="push to pi for testing">
+      <created>1507636115902</created>
+      <option name="number" value="00021" />
+      <option name="presentableId" value="LOCAL-00021" />
+      <option name="project" value="LOCAL" />
+      <updated>1507636115902</updated>
+    </task>
+    <option name="localTasksCounter" value="22" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="149745000" />
+    <option name="totallyTimeSpent" value="150417000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-1288" y="-209" width="1296" height="1010" extended-state="6" />
@@ -1132,7 +1162,7 @@
       <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32492113" sideWeight="0.50292826" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32928804" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.34435576" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.327252" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.327252" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -1553,7 +1583,8 @@
         <state relative-caret-position="459">
           <caret line="43" column="16" selection-start-line="43" selection-start-column="16" selection-end-line="43" selection-end-column="16" />
           <folding>
-            <element signature="imports" expanded="true" />
+            <element signature="e#6472#6473#0" expanded="false" />
+            <element signature="e#6510#6511#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -1563,7 +1594,24 @@
         <state relative-caret-position="476">
           <caret line="42" column="56" selection-start-line="42" selection-start-column="42" selection-end-line="42" selection-end-column="56" />
           <folding>
-            <element signature="imports" expanded="true" />
+            <element signature="e#8209#8210#0" expanded="false" />
+            <element signature="e#8267#8268#0" expanded="false" />
+            <element signature="e#9622#9623#0" expanded="false" />
+            <element signature="e#9685#9686#0" expanded="false" />
+            <element signature="e#11771#11772#0" expanded="false" />
+            <element signature="e#11836#11837#0" expanded="false" />
+            <element signature="e#11910#11911#0" expanded="false" />
+            <element signature="e#11943#11944#0" expanded="false" />
+            <element signature="e#12019#12020#0" expanded="false" />
+            <element signature="e#12053#12054#0" expanded="false" />
+            <element signature="e#13180#13181#0" expanded="false" />
+            <element signature="e#13216#13217#0" expanded="false" />
+            <element signature="e#13398#13399#0" expanded="false" />
+            <element signature="e#13443#13444#0" expanded="false" />
+            <element signature="e#14064#14065#0" expanded="false" />
+            <element signature="e#14095#14096#0" expanded="false" />
+            <element signature="e#14333#14334#0" expanded="false" />
+            <element signature="e#14369#14370#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -1661,12 +1709,11 @@
       </state>
       <state key="ModuleStructureConfigurable.UI">
         <settings>
-          <last-edited>erlang</last-edited>
+          <last-edited>tic tac toe</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>
                 <option value="0.2" />
-                <option value="0.6" />
               </list>
             </option>
           </splitter-proportions>
