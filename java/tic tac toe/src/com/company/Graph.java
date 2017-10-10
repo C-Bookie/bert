@@ -268,12 +268,10 @@ public class Graph {
 	
 	
 	public static void main(String[] args) {
-//		Main main = new Main();
-//		System.out.println(main.self.createPid().toString());
-// 		main.run();
-		
-		
-		Pi pi = new Pi();
+		Graph graph = new Graph();
+//		System.out.println(graph.self.createPid().toString());
+        graph.run();
+
 		
 	}
 	

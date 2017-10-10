@@ -17,7 +17,7 @@ public class Pi {
 
 	}
 	
-	public void foo()  throws IOException {
+	public static void foo()  throws IOException {
 		System.out.println("boo ya");
 
 		GpioController gpio = GpioFactory.getInstance();
@@ -41,4 +41,20 @@ public class Pi {
 		System.out.println("Display lasts " + ((nano / 1000000) / (64 * 64)) + " ms");
 		
 	}
+
+    public static void main(String[] args) {
+
+        try {
+            System.out.println("Begin");
+            Pi.foo();
+        } catch (IOException e) {
+            System.out.println("Error");
+            e.printStackTrace();
+        }
+        System.out.println("End");
+
+
+
+    }
+
 }
